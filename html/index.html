@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../scss/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -14,74 +14,134 @@
   <Nav>
     <div class="nav__top">
       <img src="" alt="logo">
-      <button class="lang__list">ru en uz</button>
+      <button class="lang__list">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text">
+      </div>
+      <div>
+        <div>
+          <i class="fa-regular fa-user"></i>
+          vxot
+        </div>
+        <div>
+          <i class="fa-regular fa-heart"></i>
+          vxot
+        </div>
+        <div>
+          <i class="fa-solid fa-cart-shopping"></i>
+          vxot
+        </div>
+      </div>
     </div>
 
     <div class="nav__bottom">
+      <div>
+        <i class="fa-solid fa-fire"></i>
+        <p>aksiyi</p>
+      </div>
+      <div>mazza narxi</div>
+      <div>some thing</div>
       <ul>
         <li>PRODUCT</li>
         <li>SOLUTIONS</li>
         <li>AGENCY</li>
         <li>RESOURCES</li>
       </ul>
-      <button class="btn">GET STARTED</button>
-      <p>SIGN IN</p>
     </div>
   </Nav>
   <!-- Navbar end -->
 
   <!-- Header start -->
   <header>
-    <div class="header__top">
-      <h1>Unleash the power of chat marketing</h1>
-      <h3>Drive more sales and conversions on Instagram, WhatsApp, and Messenger using automation.</h3>
-      <button class="btn">
-        <p>GET STARTED FOR FREE</p>
-        <p>GET STARTED FOR FREE</p>
-      </button>
+    <div class="carusell">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+    </div>
+    <div class="header__middle">
+      <div class="header__middle__card"></div>
     </div>
     <div class="header__bottom">
-
+      <div class="header__bottom__card"></div>
     </div>
-
   </header>
   <!-- Header end -->
 
   <!-- section-first start -->
   <section class="section_first">
     <div class="section_first__top">
-      <h3>Trusted by 1M+ Businesses</h3>
+      <h3>Novinka</h3>
     </div>
-    <div class="section_first__bottom">
-      <img src="../img/first_section/brands_amy-logo.avif" alt="">
-      <img src="../img/first_section/brands_amy-logo.avif" alt="">
-      <img src="../img/first_section/brands_amy-logo.avif" alt="">
-      <img src="../img/first_section/brands_amy-logo.avif" alt="">
-      <img src="../img/first_section/brands_amy-logo.avif" alt="">
-      <img src="../img/first_section/brands_amy-logo.avif" alt="">
-      <img src="../img/first_section/brands_amy-logo.avif" alt="">
+    <div class="section_first_bottom">
+      <div class="section_first_bottom_card">
+        <img src="" alt="">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, tempora.</h1>
+        <div class="flex">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div>platej</div>
+        <div>
+          <h3>2 222 sum</h3>
+          <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- section-first end -->
 
   <!-- section-second start -->
-  <section class="second_section">
-    <div class="second_section_title">
-      <div>
-        <h1>3 Billion+ people are on messaging apps Your business</h1>
-      </div>
+  <section class="section_first">
+    <div class="section_first__top">
+      <h3>Novinka</h3>
     </div>
-    <div class="second_section_title">
-      <div>
+    <div class="section_first_bottom">
+      <div class="section_first_bottom_card">
         <img src="" alt="">
-        <div>lorem</div>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, tempora.</h1>
+        <div class="flex">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div>platej</div>
+        <div>
+          <h3>2 222 sum</h3>
+          <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <!-- section-second end -->
 
-  <!--  start -->
-  <!--  end -->
+  <!-- third start -->
+  <section class="section_first">
+    <div class="section_first__top">
+      <h3>Novinka</h3>
+    </div>
+    <div class="section_first_bottom">
+      <div class="section_first_bottom_card">
+        <img src="" alt="">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, tempora.</h1>
+        <div class="flex">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div>platej</div>
+        <div>
+          <h3>2 222 sum</h3>
+          <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- third end -->
 
   <!--  start -->
   <!--  end -->
@@ -98,8 +158,32 @@
   <!--  start -->
   <!--  end -->
 
-  <!--  start -->
-  <!--  end -->
+  <!-- loader start -->
+  <div class="loader">
+    <main>
+      <svg class="pl" viewBox="0 0 176 160" width="176px" height="160px" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="hsl(33,90%,55%)" />
+            <stop offset="30%" stop-color="hsl(33,90%,55%)" />
+            <stop offset="100%" stop-color="hsl(3,90%,55%)" />
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke-width="16" stroke-linecap="round">
+          <circle class="pl__ring" r="56" cx="88" cy="96" stroke="hsla(0,10%,10%,0.1)" />
+          <path class="pl__worm1" d="M144,96A56,56,0,0,1,32,96" stroke="url(#pl-grad)"
+            stroke-dasharray="43.98 307.87" />
+          <path class="pl__worm2" d="M32,136V96s-.275-25.725,14-40" stroke="hsl(33,90%,55%)"
+            stroke-dasharray="0 40 0 44" stroke-dashoffset="0.001" visibility="hidden" />
+          <path class="pl__worm3" d="M144,136V96s.275-25.725-14-40" stroke="hsl(33,90%,55%)"
+            stroke-dasharray="0 40 0 44" stroke-dashoffset="0.001" visibility="hidden" />
+        </g>
+      </svg>
+    </main>
+  </div>
+  <!-- loader end -->
+
+  <script src="../index.js"></script>
 </body>
 
 </html>

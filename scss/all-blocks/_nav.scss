@@ -8,7 +8,7 @@ nav {
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
-    .nav__logo {
+    .nav__top {
         display: flex;
         align-items: center;
     }
@@ -25,7 +25,7 @@ nav {
         }
     }
 
-    .nav__signin {
+    .nav__bottom {
         display: flex;
         align-items: center;
         p {
