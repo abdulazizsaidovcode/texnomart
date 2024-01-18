@@ -1,0 +1,19 @@
+header {
+    width: $defolt--width-100-persent;
+    height: $defolt--height-300-px;
+
+    .header__carusell {
+        width: $defolt--width-100-persent;
+        height: $defolt--width-100-persent;
+        overflow: hidden;
+
+        img {
+            width: $defolt--width-100-persent;
+            height: $defolt--width-100-persent;
+        }
+    }
+    .header__middle{
+        width: $defolt--width-100-persent;
+        height: $defolt--height-300-px;
+    }
+}

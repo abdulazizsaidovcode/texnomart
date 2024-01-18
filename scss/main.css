@@ -16,6 +16,24 @@
   font-size: 20px;
 }
 
+header {
+  width: 100%;
+  height: 300px;
+}
+header .header__carusell {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+header .header__carusell img {
+  width: 100%;
+  height: 100%;
+}
+header .header__middle {
+  width: 100%;
+  height: 300px;
+}
+
 nav {
   background-color: #f5f5f5;
   width: 100%;
@@ -280,4 +298,45 @@ main {
     visibility: visible;
     transform: translate(0, -36px) rotate(-360deg);
   }
+}
+.scss.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+
+.carousel__container {
+  padding: 0 20px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel__item {
+  width: 300px;
+  height: 100%;
+  margin: 10px;
+  border: 1px solid #f5f5f5; /* Chegarani sozlang */
+  border-radius: 5px; /* Radiusni sozlang */
+  padding: 10px; /* Paddingni sozlang */
+  text-align: center; /* Matnni markazga joylashtirish */
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel__button--left {
+  left: 10px;
+}
+
+.carousel__button--right {
+  right: 10px;
 }/*# sourceMappingURL=main.css.map */
