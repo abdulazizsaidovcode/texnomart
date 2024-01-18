@@ -25,9 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }, 2000);
 
-  setInterval(() => {
+
     autoCarusel()
-  }, 3000)
+  
 
   document.querySelector('.carousel__button--left').addEventListener('click', () => {
     container.scrollLeft -= 200;
