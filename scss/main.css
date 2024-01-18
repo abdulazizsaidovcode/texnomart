@@ -1,21 +1,111 @@
-nav {
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 20px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.nav-category-button {
+  width: -moz-max-content;
+  width: max-content;
   display: flex;
-  justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fbc100;
+  font-size: 20px;
+}
+
+nav {
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 0 40px;
 }
 nav .nav__top {
   display: flex;
+  padding: 15px 0;
+  width: 100%;
+}
+nav .nav__top .nav_top_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+nav .nav__top .nav__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 50%;
+}
+nav .nav__top .nav__search div {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #fbc100;
+  padding: 10px;
+  border-radius: 10px;
+}
+nav .nav__top .nav__search div i {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+nav .nav__top .nav__search div input {
+  background-color: #fff;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+}
+nav .nav__top .nav__profile {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+nav .nav__top .nav__profile div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+nav .nav__top .nav__profile div i {
+  font-size: 20px;
+}
+nav .nav__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  padding: 10px 0;
+  width: 100%;
+}
+nav .nav__bottom .nav_acsiya_first {
+  background-color: #fb0000;
+  color: #f5f5f5;
+  border-radius: 20px;
+  padding: 5px;
+}
+nav .nav__bottom .nav_acsiya_second {
+  background-color: #fb0000;
+  color: #f5f5f5;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 5px;
+}
+nav .nav__bottom div {
+  display: flex;
   align-items: center;
 }
-nav .nav__top .nav_top_top {
+nav .nav__bottom div i {
+  margin-right: 3px;
+}
+nav .nav__bottom ul {
   display: flex;
-  width: 30%;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 60%;
 }
 
 * {

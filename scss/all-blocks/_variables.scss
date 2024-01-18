@@ -1,4 +1,4 @@
-// typographys
+//------------- typographys-------------
 
 $very-small-text: 12px;
 $small-text: 13px;
@@ -8,28 +8,36 @@ $very-big-text: 20px;
 $xl-text: 25px;
 $xxl-text: 40px;
 
-// font colors
+//------------- font colors-------------
 
 $defolt-text-color: #000000;
 $discribtion-text-color: #bdbdbd;
 $hover-text-color: #fbc100;
 
-// background colors
+//------------- background colors-------------
 
 $bg-1-color: #f5f5f5;
 $bg-2-color: #333333;
 $bg-3-color: #f7f7f7;
+$bg-4-color: #fbc100;
+$bg-5-color: #fff;
+
+// ---------btn-color----------------
+
+$btn-color-1:#fbc100;
+$btn-color-1:#fb0000;
 
 
 
-// container and card styles
+
+//------------- container and card styles ------------------
 
 $defolt-card-p: 16px;
 $defolt-card-mx: 10px;
 $defolt-card-mb: 10px;
 
 
-// width and height
+//------------------- width and height -------------------
 $defolt--width-max-content: max-content;
 $defolt--height-max-content: max-content;
 
@@ -58,6 +66,7 @@ $defolt--width-9-px:9px;
 $defolt--width-10-px:10px;
 
 $defolt--width-10-px:10px;
+$defolt--width-15-px:15px;
 $defolt--width-20-px:20px;
 $defolt--width-30-px:30px;
 $defolt--width-40-px:40px;
@@ -103,11 +112,86 @@ $defolt--height-90-px:90px;
 $defolt--height-100-px:100px;
 
 
+//------------------- paddings---------------------
+
+// px
+$defolt--padding-1-px:1px;
+$defolt--padding-2-px:2px;
+$defolt--padding-3-px:3px;
+$defolt--padding-4-px:4px;
+$defolt--padding-5-px:5px;
+$defolt--padding-6-px:6px;
+$defolt--padding-7-px:7px;
+$defolt--padding-8-px:8px;
+$defolt--padding-9-px:9px;
+$defolt--padding-10-px:10px;
+
+$defolt--padding-10-px:10px;
+$defolt--padding-15-px:15px;
+$defolt--padding-20-px:20px;
+$defolt--padding-30-px:30px;
+$defolt--padding-40-px:40px;
+$defolt--padding-50-px:50px;
+$defolt--padding-60-px:60px;
+$defolt--padding-70-px:70px;
+$defolt--padding-80-px:80px;
+$defolt--padding-90-px:90px;
+$defolt--padding-100-px:100px;
 
 
 
+// ------------- mixens --------------
 
 
+@mixin flex {
+    display: flex; 
+  }
+@mixin flex-c {
+    flex-direction: column; 
+  }
+@mixin flex-r {
+    flex-direction: row; 
+  }
+@mixin flex-c-r {
+    flex-direction: column-reverse; 
+  }
+@mixin flex-r-r {
+    flex-direction: row-reverse; 
+  }
+@mixin flex-w {
+    flex-wrap: wrap;
+  }
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@mixin align-c {
+    display: flex;
+    align-items: center;
+  }
+@mixin justify-c {
+    display: flex;
+    justify-content: center;
+  }
+@mixin justify-b {
+    display: flex;
+    justify-content: space-between;
+  }
+@mixin justify-a {
+    display: flex;
+    justify-content: space-around;
+  }
+@mixin align-c-justify-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+@mixin align-c-justify-a {
+    display: flex;
+    justify-content: space-between;
+  }
 
 
 
