@@ -34,6 +34,8 @@ header {
 
 .header__middle {
     width: $defolt--width-100-persent;
-    // height: $defolt--height-400-px;
-    background: linear-gradient($bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,transparent);
+    background: linear-gradient($bg-6-color,$bg-6-color,$bg-6-color,$bg-6-color,$bg-6-color,$bg-6-color,$bg-6-color,$bg-6-color,transparent);
+    h3 {
+        padding: 0 $globe-padding-x;
+    }
 }
