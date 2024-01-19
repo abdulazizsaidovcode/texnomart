@@ -181,6 +181,25 @@ nav .nav__bottom ul {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+.new__product .new__product__card .new__product__discribtion .new__product__price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.new__product .new__product__card .new__product__discribtion .new__product__price div {
+  display: flex;
+}
+.new__product .new__product__card .new__product__discribtion .new__product__price div p {
+  margin-right: 5px;
+}
+.new__product .new__product__card .new__product__discribtion .new__product__price .new__product__shopping {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+  border: 1px solid #fbc100;
+  border-radius: 10px;
+}
 
 * {
   border: 0;
