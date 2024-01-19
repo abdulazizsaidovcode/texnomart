@@ -167,15 +167,19 @@ nav .nav__bottom ul {
   color: #75757c;
 }
 .new__product .new__product__card .new__product__discribtion .new__product__stars {
+  margin: 10px 0;
   font-size: 14px;
   color: #75757c;
 }
 .new__product .new__product__card .new__product__discribtion .new__product__rasrochka {
-  padding: 10px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px;
   font-size: 14px;
-  background: #75757c;
+  background: #f4f4f4;
   color: #000000;
-  border-radius: 10%;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 * {

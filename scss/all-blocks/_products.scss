@@ -28,15 +28,19 @@ $card-border-color: #bdbdbd;
                 color: $discribtion-text-color-2;
             }
             .new__product__stars {
+                margin: $defolt--width-10-px 0;
                 font-size: $medium-text;
                 color: $discribtion-text-color-2;
             }
             .new__product__rasrochka {
-                padding: $defolt--width-10-px;
+                width: $defolt--width-max-content;
+                padding: $defolt--width-5-px;
                 font-size: $medium-text;
                 background: $bg-3-color;
-                color: $defolt-text-color-2;
-                border-radius: $defolt--width-10-persent;
+                color: $defolt-text-color;
+                border-radius: $defolt--width-10-px;
+                margin-bottom: $defolt--width-20-px ;
+
             }
         }
 
