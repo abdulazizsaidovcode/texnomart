@@ -1,42 +1,56 @@
-.scss.carousel {
+.carousel {
     position: relative;
     overflow: hidden;
-    width: $defolt--width-100-persent;
     height: $defolt--height-400-px;
-  }
-  
-  .carousel__container {
-    padding: 0 $defolt--width-20-px;
-    height: $defolt--height-100-persent;
-    overflow: hidden;
-    @include flex;
-    transition: transform 1s ease-in-out;
-  }
-  
-  .carousel__item {
-    width: $defolt--width-300-px;
-    height: $defolt--height-100-persent;
-    margin: 10px;
-    border: 1px solid $bg-1-color; /* Chegarani sozlang */
-    border-radius: 5px; /* Radiusni sozlang */
-    padding: 10px; /* Paddingni sozlang */
-    text-align: center; /* Matnni markazga joylashtirish */
-  }
-  
-  .carousel__button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: $bg-5-color;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .carousel__button--left {
+
+    .carousel__container {
+        padding: 0 $defolt--width-20-px;
+        height: $defolt--height-100-persent;
+        overflow: hidden;
+        @include flex-center;
+        transition: all 2s ease-in-out;
+    }
+
+    .carousel__item {
+        width: 300px !important;
+        margin: 10px;
+        border: 1px solid $bg-1-color;
+        border-radius: 10px;
+        padding: 15px 50px;
+        text-align: center;
+        transition: all 2s ease-in-out;
+
+    }
+
+    .carousel__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $bg-5-color;
+        border: $defolt--width-1-px solid $discribtion-text-color;
+        font-size: $very-big-text;
+        border-radius: $defolt--width-50-persent;
+        width: $defolt--width-40-px;
+        height: $defolt--height-40-px;
+        cursor: pointer;
+    }
+    
+}
+
+
+
+.carousel__button--left {
     left: 10px;
-  }
-  
-  .carousel__button--right {
+}
+
+.carousel__button--right {
     right: 10px;
-  }
-  
+}
+
+.head-carousel__button--left {
+    left: 100px;
+}
+
+.head-carousel__button--right {
+    right: 100px;
+}

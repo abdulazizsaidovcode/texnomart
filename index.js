@@ -5,6 +5,11 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   loader()
 
+
+
+
+  // ---------------------- second carusel -----------------------
+
   const container = document.querySelector('.carousel__container');
   let scrollAmount = 0;
 
@@ -12,26 +17,60 @@ window.addEventListener('DOMContentLoaded', () => {
     container.scrollLeft += 200;
   }, 2000);
 
-
-  function autoCarusel() {
-    return container.scrollLeft += 200;
-  }
-  setInterval(() => {
-    if (container.scrollLeft == 0) {
-      clearInterval(autoCarusel)
-      container.scrollLeft -= 200;
-    } else {
-      autoCarusel()
-    }
-  }, 2000);
-
-
-    autoCarusel()
-  
-
   document.querySelector('.carousel__button--left').addEventListener('click', () => {
     container.scrollLeft -= 200;
   });
+
+  function autoCarousel() {
+    const carousel = document.querySelector('.carousel__container');
+    let scrollAmount = 0;
+
+    const step = 200;
+    const intervalTime = 4000;
+    const smoothScrollTime = 200;
+
+    carousel.style.scrollBehavior = 'smooth';
+
+    const interval = setInterval(() => {
+      if (scrollAmount < carousel.scrollWidth - carousel.clientWidth) {
+        carousel.scrollLeft += step;
+        scrollAmount += step;
+      } else {
+        carousel.style.scrollBehavior = 'auto';
+        carousel.scrollLeft = 0;
+        scrollAmount = 0;
+        setTimeout(() => {
+          carousel.style.scrollBehavior = 'smooth';
+        }, smoothScrollTime);
+      }
+    }, intervalTime);
+  }
+
+  autoCarousel();
+
+  //----------------- next carousel ------------------------
+
+  function headerAutoslide() {
+    head = document.querySelector('.header__carusell');
+
+    let scrollAmount = 0;
+
+    const step = 200;
+    const intervalTime = 4000;
+    const smoothScrollTime = 200;
+
+    const interval = setInterval(() => {
+      document.querySelector('.head-carousel_right_button--').addEventListener('click', () => {
+        let img = document.querySelector('.head-carousel_right_button--')
+        header.scrollLeft += header.clientWidth;
+      }, 2000);
+
+      document.querySelector('.head-carousel__button--left').addEventListener('click', () => {
+        container.scrollLeft -= 200;
+      });
+    }, intervalTime);
+  }
+
 
 
 })

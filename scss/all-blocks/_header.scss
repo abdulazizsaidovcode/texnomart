@@ -6,14 +6,33 @@ header {
         width: $defolt--width-100-persent;
         height: $defolt--width-100-persent;
         overflow: hidden;
+        position: relative;
 
-        img {
+        div {
             width: $defolt--width-100-persent;
             height: $defolt--width-100-persent;
+            img {
+                width: $defolt--width-100-persent;
+                height: $defolt--width-100-persent;
+            }
         }
     }
-    .header__middle{
-        width: $defolt--width-100-persent;
-        height: $defolt--height-300-px;
+
+    .head-carousel__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $bg-5-color;
+        border: $defolt--width-1-px solid $discribtion-text-color;
+        font-size: $very-big-text;
+        border-radius: $defolt--width-50-persent;
+        width: $defolt--width-40-px;
+        height: $defolt--height-40-px;
+        cursor: pointer;
     }
+}
+
+.header__middle {
+    width: $defolt--width-100-persent;
+    height: $defolt--height-300-px;
 }
