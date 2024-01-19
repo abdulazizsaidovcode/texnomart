@@ -151,6 +151,7 @@ nav .nav__bottom ul {
   padding: 30% 50%;
 }
 .new__product .new__product__card {
+  position: relative;
   width: 275px;
   border: 1px solid #bdbdbd;
   border-radius: 16px;
@@ -158,6 +159,24 @@ nav .nav__bottom ul {
 }
 .new__product .new__product__card img {
   width: 100%;
+}
+.new__product .new__product__card .new__product__rate {
+  position: absolute;
+  right: 10px;
+}
+.new__product .new__product__card .new__product__rate div {
+  font-size: 16px;
+  border: 1px solid #bdbdbd;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3px;
+}
+.new__product .new__product__card .new__product__rate div i {
+  font-weight: 500 !important;
 }
 .new__product .new__product__card .new__product__discribtion {
   width: 100%;
@@ -375,9 +394,9 @@ main {
   }
 }
 .carousel {
+  height: 400px;
   position: relative;
   overflow: hidden;
-  height: 400px;
 }
 .carousel .carousel__container {
   padding: 0 20px;
@@ -391,7 +410,7 @@ main {
 .carousel .carousel__item {
   width: 300px !important;
   margin: 10px;
-  border: 1px solid #f5f5f5;
+  border: 1px solid #bdbdbd;
   border-radius: 10px;
   padding: 15px 50px;
   text-align: center;

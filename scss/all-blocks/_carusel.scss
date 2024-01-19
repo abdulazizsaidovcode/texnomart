@@ -1,7 +1,10 @@
+$caruels-defolt-height: 400px;
+
+
 .carousel {
+    height: $caruels-defolt-height;
     position: relative;
     overflow: hidden;
-    height: $defolt--height-400-px;
 
     .carousel__container {
         padding: 0 $defolt--width-20-px;
@@ -14,7 +17,7 @@
     .carousel__item {
         width: 300px !important;
         margin: 10px;
-        border: 1px solid $bg-1-color;
+        border: $defolt-border-1;
         border-radius: 10px;
         padding: 15px 50px;
         text-align: center;
@@ -27,7 +30,7 @@
         top: 50%;
         transform: translateY(-50%);
         background-color: $bg-5-color;
-        border: $defolt--width-1-px solid $discribtion-text-color;
+        border: $defolt-border-1;
         font-size: $very-big-text;
         border-radius: $defolt--width-50-persent;
         width: $defolt--width-40-px;
@@ -40,17 +43,17 @@
 
 
 .carousel__button--left {
-    left: 10px;
+    left: $defolt--width-10-px;
 }
 
 .carousel__button--right {
-    right: 10px;
+    right: $defolt--width-10-px;
 }
 
 .head-carousel__button--left {
-    left: 100px;
+    left: $defolt--width-100-px;
 }
 
 .head-carousel__button--right {
-    right: 100px;
+    right: $defolt--width-100-px;
 }
