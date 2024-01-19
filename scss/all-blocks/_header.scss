@@ -1,6 +1,6 @@
 header {
     width: $defolt--width-100-persent;
-    height: $defolt--height-300-px;
+    height: $defolt--height-max-content;
 
     .header__carusell {
         width: $defolt--width-100-persent;
@@ -9,11 +9,11 @@ header {
         position: relative;
 
         div {
-            width: $defolt--width-100-persent;
-            height: $defolt--width-100-persent;
+            display: flex;
+            width: $defolt--width-max-content;
             img {
-                width: $defolt--width-100-persent;
-                height: $defolt--width-100-persent;
+                width: 100vw;
+                height: $defolt--width-400-px;
             }
         }
     }
@@ -34,5 +34,6 @@ header {
 
 .header__middle {
     width: $defolt--width-100-persent;
-    height: $defolt--height-300-px;
+    // height: $defolt--height-400-px;
+    background: linear-gradient($bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,$bg-1-color,transparent);
 }

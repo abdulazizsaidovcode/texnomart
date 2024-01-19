@@ -1,8 +1,9 @@
-$caruels-defolt-height: 400px;
+$caruels-defolt-height: 200px;
 
 
 .carousel {
     height: $caruels-defolt-height;
+
     position: relative;
     overflow: hidden;
 
@@ -15,8 +16,9 @@ $caruels-defolt-height: 400px;
     }
 
     .carousel__item {
-        width: 300px !important;
-        margin: 10px;
+        width: $defolt--width-300-px !important;
+        background-color: #fff;
+        margin: $defolt--width-10-px;
         border: $defolt-border-1;
         border-radius: 10px;
         padding: 15px 50px;
