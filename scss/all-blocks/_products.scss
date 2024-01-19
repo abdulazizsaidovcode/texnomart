@@ -1,21 +1,23 @@
-$card-section-head: 800px;
+$card-section-head: 700px;
 
 .new__product {
     width: $defolt--width-max-content;
     height: $card-section-head;
     padding: $defolt--height-30-px $defolt--width-50-px;
-
+    overflow: hidden;
+    @include flex-center;
+    flex-direction: column;
     .new__product-head {
         width: $defolt--width-100-persent;
-        @include align-c-justify-b;
-        flex-wrap: wrap;
+        overflow: hidden;
+        display: flex;
         .new__product__card {
+            margin-left: $defolt--width-10-px;
             position: relative;
             width: $card-width;
             border: $card-border solid $card-border-color ;
             border-radius: $card-border-radius ;
             padding: $defolt--width-15-px;
-            margin-bottom: $defolt--height-5-px;
 
             // border-radius: $;
             img {
