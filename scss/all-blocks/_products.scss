@@ -1,0 +1,45 @@
+$card-width: 275px;
+$card-border-radius: 16px;
+$card-border: 1px;
+$card-border-color: #bdbdbd;
+
+
+.new__product {
+    width: $defolt--width-100-persent;
+    height: $defolt--height-max-content;
+    padding: $defolt--height-30-persent $defolt--width-50-persent;
+
+    .new__product__card {
+        width: $card-width;
+        border: $card-border solid $card-border-color ;
+        border-radius: $card-border-radius ;
+        padding: $defolt--width-15-px;
+
+        // border-radius: $;
+        img {
+            width: $defolt--width-100-persent;
+        }
+
+        .new__product__discribtion {
+            width: $defolt--width-100-persent;
+
+            .new__product__title     {
+                font-size: $medium-text;
+                color: $discribtion-text-color-2;
+            }
+            .new__product__stars {
+                font-size: $medium-text;
+                color: $discribtion-text-color-2;
+            }
+            .new__product__rasrochka {
+                padding: $defolt--width-10-px;
+                font-size: $medium-text;
+                background: $bg-3-color;
+                color: $defolt-text-color-2;
+                border-radius: $defolt--width-10-persent;
+            }
+        }
+
+
+    }
+}

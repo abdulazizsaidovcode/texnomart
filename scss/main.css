@@ -144,6 +144,40 @@ nav .nav__bottom ul {
   width: 60%;
 }
 
+.new__product {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 30% 50%;
+}
+.new__product .new__product__card {
+  width: 275px;
+  border: 1px solid #bdbdbd;
+  border-radius: 16px;
+  padding: 15px;
+}
+.new__product .new__product__card img {
+  width: 100%;
+}
+.new__product .new__product__card .new__product__discribtion {
+  width: 100%;
+}
+.new__product .new__product__card .new__product__discribtion .new__product__title {
+  font-size: 14px;
+  color: #75757c;
+}
+.new__product .new__product__card .new__product__discribtion .new__product__stars {
+  font-size: 14px;
+  color: #75757c;
+}
+.new__product .new__product__card .new__product__discribtion .new__product__rasrochka {
+  padding: 10px;
+  font-size: 14px;
+  background: #75757c;
+  color: #000000;
+  border-radius: 10%;
+}
+
 * {
   border: 0;
   box-sizing: border-box;
