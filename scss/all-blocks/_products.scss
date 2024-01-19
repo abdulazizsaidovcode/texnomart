@@ -28,7 +28,8 @@
                 @include flex-center;
                 margin-bottom: $defolt--height-3-px;
 
-                i {
+                .fa-heart {
+                    content: "\e1ac" !important;
                     font-weight: 500 !important;
 
                 }

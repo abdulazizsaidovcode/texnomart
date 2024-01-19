@@ -175,7 +175,8 @@ nav .nav__bottom ul {
   align-items: center;
   margin-bottom: 3px;
 }
-.new__product .new__product__card .new__product__rate div i {
+.new__product .new__product__card .new__product__rate div .fa-heart {
+  content: "\e1ac" !important;
   font-weight: 500 !important;
 }
 .new__product .new__product__card .new__product__discribtion {
