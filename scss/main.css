@@ -149,9 +149,7 @@ nav .nav__bottom ul {
   width: max-content;
   height: 700px;
   padding: 30px 50px;
-  overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
