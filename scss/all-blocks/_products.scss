@@ -1,13 +1,13 @@
-$card-section-head: 700px;
+$card-section-head: 600px;
 
 .product {
     width: $defolt--width-max-content;
     height: $card-section-head;
-    padding: $defolt--height-30-px $defolt--width-50-px;
+    padding: $defolt--height-10-px $defolt--width-50-px;
     @include justify-c;
     flex-direction: column;
     .title {
-        padding: $defolt--width-20-px 0;
+        padding: 0 0 $defolt--width-40-px 0;
     }
     .product-head {
         width: $defolt--width-100-persent;

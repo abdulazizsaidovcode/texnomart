@@ -152,14 +152,14 @@ nav .nav__bottom ul {
 .product {
   width: -moz-max-content;
   width: max-content;
-  height: 700px;
-  padding: 30px 50px;
+  height: 600px;
+  padding: 10px 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .product .title {
-  padding: 20px 0;
+  padding: 0 0 40px 0;
 }
 .product .product-head {
   width: 100%;
