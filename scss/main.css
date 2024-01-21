@@ -159,7 +159,13 @@ nav .nav__bottom ul {
   flex-direction: column;
 }
 .product .title {
+  width: 100%;
   padding: 0 0 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product .title div {
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -7,8 +7,12 @@ $card-section-head: 600px;
     @include justify-c;
     flex-direction: column;
     .title {
+        width: $defolt--width-100-persent;
         padding: 0 0 $defolt--width-40-px 0;
         @include align-c-justify-b;
+        div {
+            @include align-c-justify-b;
+        }
     }
     .product-head {
         width: $defolt--width-100-persent;
