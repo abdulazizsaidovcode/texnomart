@@ -1,16 +1,19 @@
 $card-section-head: 700px;
 
-.new__product {
+.product {
     width: $defolt--width-max-content;
     height: $card-section-head;
     padding: $defolt--height-30-px $defolt--width-50-px;
     @include justify-c;
     flex-direction: column;
-    .new__product-head {
+    .title {
+        padding: $defolt--width-20-px 0;
+    }
+    .product-head {
         width: $defolt--width-100-persent;
         overflow: hidden;
         display: flex;
-        .new__product__card {
+        .product__card {
             margin-left: $defolt--width-10-px;
             position: relative;
             width: $card-width;
@@ -22,7 +25,7 @@ $card-section-head: 700px;
                 width: $defolt--width-100-persent;
             }
 
-            .new__product__rate {
+            .product__rate {
                 position: absolute;
                 right: 10px;
 
@@ -42,21 +45,21 @@ $card-section-head: 700px;
                 }
             }
 
-            .new__product__discribtion {
+            .product__discribtion {
                 width: $defolt--width-100-persent;
 
-                .new__product__title {
+                .product__title {
                     font-size: $medium-text;
                     color: $discribtion-text-color-2;
                 }
 
-                .new__product__stars {
+                .product__stars {
                     margin: $defolt--width-10-px 0;
                     font-size: $medium-text;
                     color: $discribtion-text-color-2;
                 }
 
-                .new__product__rasrochka {
+                .product__rasrochka {
                     width: $defolt--width-max-content;
                     padding: $defolt--width-5-px;
                     font-size: $medium-text;
@@ -67,7 +70,7 @@ $card-section-head: 700px;
 
                 }
 
-                .new__product__price {
+                .product__price {
                     width: $defolt--width-100-persent;
                     @include align-c-justify-b;
 
@@ -79,7 +82,7 @@ $card-section-head: 700px;
                         }
                     }
 
-                    .new__product__shopping {
+                    .product__shopping {
                         width: $defolt--width-max-content;
                         padding: $defolt--width-10-px;
                         border: $defolt--width-1-px solid $bg-4-color;
