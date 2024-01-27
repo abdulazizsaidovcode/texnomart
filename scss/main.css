@@ -66,6 +66,7 @@
   flex-direction: row;
   display: flex;
   justify-content: space-between;
+  width: 70%;
 }
 .footer .footer-top .footer-nav .column {
   display: flex;

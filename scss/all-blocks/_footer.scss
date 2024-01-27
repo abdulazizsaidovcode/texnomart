@@ -53,7 +53,8 @@
       @include flex;
       @include flex-r;
       @include justify-b;
-
+      width: $defolt--width-70-persent;
+      
       
       .column {
         @include flex;
