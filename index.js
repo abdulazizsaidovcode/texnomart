@@ -71,7 +71,24 @@ window.addEventListener('DOMContentLoaded', () => {
     }, intervalTime);
   }
 
-
+  function getCard() {
+    fetch('https://texnomart.pythonanywhere.com/api/api/cards/')
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Serverga ulanishda muammo yuz berdi!');
+        }
+      })
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Xato:', error);
+        console.log("salom");
+      });
+  }
+  getCard()
 
 })
 

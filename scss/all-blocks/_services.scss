@@ -1,0 +1,67 @@
+// Assuming the variables and mixins are defined in 'variables.scss' and 'mixins.scss'
+
+
+.services {
+    padding: $defolt--width-40-px;
+    .services_title {
+        @include flex-center;
+        padding: $defolt--height-20-px 0;
+    }
+
+    .services_describtion {
+        @include flex;
+        @include justify-b;
+        @include align-c;
+        padding: $globe-padding-x 0;
+        border: $defolt-border-1;
+        border-radius: $defolt-border-radius;
+
+        .service-card:last-child {
+            border-right: none;
+        }
+
+        .service-card {
+            border-right: $defolt--height-1-px solid $bg-3-color;
+            width: $card-width;
+            padding: $defolt-card-p;
+            margin-bottom: $defolt-card-mb;
+            text-align: center;
+            transition: border-color 0.3s;
+
+            
+
+            .icon-box {
+                @include flex-center;
+
+                i {
+                    @include flex-center;
+                    background-color: $bg-1-color;
+                    width: $defolt--width-50-px;
+                    height: $defolt--width-50-px;
+                    border-radius: $full-border-radius;
+                    color: $bg-4-color;
+                }
+
+                width: $defolt--width-100-persent;
+                height: $defolt--height-max-content;
+                margin-bottom: $defolt--padding-10-px;
+
+            }
+
+            .title {
+                font-size: $big-text;
+                color: $defolt-text-color;
+                margin: $defolt--padding-10-px 0;
+            }
+
+            .description {
+                font-size: $small-text;
+                color: $discribtion-text-color;
+            }
+        }
+    }
+
+
+}
+
+// Make sure you have corresponding classes for your icons and they are properly styled.
