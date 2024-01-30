@@ -4,8 +4,9 @@
 }
 
 .news-section {
+    padding: $defolt--width-80-px 0;
     overflow: auto;
-    width: 90vw;
+    width: 98vw;
 
     .news-header {
         // padding: 0 $defolt--width-20-px;
