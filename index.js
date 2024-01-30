@@ -72,13 +72,9 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   function getCard() {
-    fetch('https://texnomart.pythonanywhere.com/api/api/cards/')
+    fetch('https://texnomartapi.pythonanywhere.com/api/api/cards/')
       .then(response => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          throw new Error('Serverga ulanishda muammo yuz berdi!');
-        }
+        return response.json(); 
       })
       .then(data => {
         console.log(data);
@@ -89,7 +85,6 @@ window.addEventListener('DOMContentLoaded', () => {
       });
   }
   getCard()
-
 })
 
 

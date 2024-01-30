@@ -1,0 +1,104 @@
+.app-download-section {
+    @include flex-center;
+    @include flex-w;
+    background: $bg-1-color;
+    padding: $defolt--padding-50-px;
+
+    .app-visuals {
+        @include flex-center;
+        margin-right: $defolt--padding-50-px;
+
+        .phone-left {
+            max-width: $defolt--width-60-persent;
+        }
+    }
+
+    .app-content {
+        max-width: $defolt--width-40-persent;
+
+        h2 {
+            font-size: $xxl-text;
+            color: $defolt-text-color;
+            margin-bottom: $defolt--padding-20-px;
+        }
+
+        p {
+            font-size: $medium-text;
+            color: $defolt-text-color;
+            margin-bottom: $defolt--padding-20-px;
+        }
+
+        .qr-code {
+            @include align-c;
+            padding: $defolt--padding-20-px;
+            background-color: $bg-5-color;
+            border-radius: $defolt-border-radius;
+            margin-bottom: $defolt--padding-20-px;
+
+            img {
+                width: $defolt--width-100-px;
+                margin-bottom: $defolt--padding-20-px;
+            }
+
+            p {
+                font-size: $big-text;
+                margin-left: 10px;
+                width: $defolt--width-50-persent;
+                font-size: $small-text;
+                color: $defolt-text-color;
+                span {
+                    font-weight: bold
+                }
+            }
+        }
+
+        .app-buttons {
+            @include flex;
+            gap: $defolt--padding-10-px;
+
+            .app-button {
+                @include flex;
+                @include align-c;
+                background-color: $bg-2-color;
+                border-radius: $defolt-border-radius;
+                text-decoration: none;
+                padding: $defolt--padding-10-px $defolt--padding-20-px;
+                color: $defolt-text-color-2;
+                font-size: $small-text;
+                gap: $defolt--padding-5-px;
+
+                &:hover {
+                    background-color: darken($bg-2-color, 10%);
+                }
+
+                img {
+                    // icons should have a fixed size
+                    width: $defolt--width-30-px;
+                    // height: $defolt--height-auto;
+                }
+
+                span {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+
+        .app-visuals {
+            margin-right: 0;
+            margin-bottom: $defolt--padding-30-px;
+        }
+
+        .app-content {
+            max-width: $defolt--width-100-persent;
+        }
+
+        .app-buttons {
+            justify-content: center;
+        }
+    }
+}

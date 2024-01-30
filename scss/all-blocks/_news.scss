@@ -1,0 +1,72 @@
+.news-section::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+
+.news-section {
+    overflow: auto;
+    width: 90vw;
+
+    .news-header {
+        // padding: 0 $defolt--width-20-px;
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 30px;
+    }
+    .news-cards-container {
+        padding: 0 $defolt--width-30-px;
+        width: max-content;
+        display: flex;
+        gap: 20px;
+
+        .news-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 20px); // three cards with gap
+            margin-bottom: 20px;
+
+            .news-image {
+                width: 100%;
+                height: 200px;
+                background-size: cover;
+                display: block;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+
+                
+            }
+
+            .news-info {
+                padding: 15px;
+
+                .news-date {
+                    font-size: 14px;
+                    color: #757575;
+                    margin-bottom: 5px;
+                }
+
+                .news-title {
+                    font-size: 18px;
+                    color: #333;
+                    height: 50px; // ensure titles are aligned if they wrap
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+
+
+    @media (max-width: 768px) {
+        .news-card {
+            width: calc(50% - 20px); // two cards with gap on smaller screens
+        }
+    }
+
+    @media (max-width: 480px) {
+        .news-card {
+            width: 100%; // full width for very small screens
+        }
+    }
+}
