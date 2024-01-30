@@ -42,18 +42,35 @@
   width: 30%;
   margin-bottom: 10px;
 }
-.footer .footer-top .contact-info .phone-number {
+.footer .footer-top .contact-info .vapros {
   font-size: 16px;
+  margin-bottom: 10px;
+}
+.footer .footer-top .contact-info .phone-number {
+  margin-bottom: 30px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 .footer .footer-top .contact-info .social-links {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 .footer .footer-top .contact-info .social-links a {
+  width: 50px;
+  height: 50px;
+  background-color: #545454;
+  border-radius: 10px;
   color: #fff;
   font-size: 16px;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-top .contact-info .social-links a i {
+  font-size: 25px;
+  color: #fff;
 }
 .footer .footer-top .contact-info .social-links a:hover {
   color: #fbc100;
@@ -88,13 +105,27 @@
 .footer .footer-top .footer-nav .column:last-child {
   margin-right: 0;
 }
+.footer .footer-top .footer-nav .customer-service div {
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 0 10px;
+  border: 3px dotted #696767;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 170px;
+  height: 50px;
+}
+.footer .footer-top .footer-nav .customer-service div p {
+  font-size: 14px;
+}
 .footer .footer-bottom {
   display: flex;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px 0;
-  border-top: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
 }
 .footer .footer-bottom .bonus-check {
   background-color: #fb0000;
@@ -119,10 +150,16 @@
   margin: 0;
 }
 .footer .footer-disclaimer {
+  padding: 20px 0;
   font-size: 12px;
   color: #bdbdbd;
   margin-top: 10px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer-disclaimer p {
+  width: 50%;
 }
 
 header {

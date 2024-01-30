@@ -1,16 +1,15 @@
-
 .footer {
   background-color: $bg-2-color;
   color: $defolt-text-color-2;
   padding: $globe-padding-x $defolt--width-40-px;
-  
+
   .container {
     @include flex;
     @include flex-c;
     max-width: $defolt--width-100-persent;
     padding: $defolt-card-p;
   }
-  
+
   .footer-top {
     @include flex;
     @include flex-r;
@@ -24,42 +23,60 @@
       width: $defolt--width-30-persent;
       margin-bottom: $defolt-card-mb;
 
-      .phone-number {
+      .vapros {
         font-size: $big-text;
+        margin-bottom: 10px;
+      }
+
+      .phone-number {
+        margin-bottom: 30px;
+        font-size: $xl-text;
         margin-bottom: $defolt--padding-10-px;
       }
 
       .social-links {
         @include flex;
         @include flex-r;
-        
+        margin-bottom: 20px;
+
         a {
+          width: 50px;
+          height: 50px;
+          background-color: #545454;
+          border-radius: 10px;
           color: $defolt-text-color-2;
           font-size: $big-text;
           text-decoration: none;
-          
+          @include flex-center;
+
+          i {
+            font-size: 25px;
+
+            color: #fff;
+          }
+
           &:hover {
             color: $hover-text-color;
           }
-          
+
           &:not(:last-child) {
             margin-right: $defolt--width-15-px;
           }
         }
       }
     }
-    
+
     .footer-nav {
       @include flex;
       @include flex-r;
       @include justify-b;
       width: $defolt--width-70-persent;
-      
-      
+
+
       .column {
         @include flex;
         @include flex-c;
-        
+
         h4 {
           font-size: $medium-text;
           margin-bottom: $defolt--padding-10-px;
@@ -80,28 +97,43 @@
           margin-right: 0;
         }
       }
+
+      .customer-service {
+        div {
+          margin-top: 30px;
+          border-radius: 10px;
+          padding: 0 10px;
+          border: 3px dotted #696767;
+          @include align-c-justify-b;
+          width: 170px;
+          height: 50px;
+          p {
+            font-size: $medium-text;
+          }
+        }
+      }
     }
   }
-  
+
   .footer-bottom {
     @include flex;
     @include align-c-justify-b;
     padding: $defolt-card-p 0;
-    border-top: $defolt-border-1;
-    
+    border-bottom: $defolt-border-1;
+
     .bonus-check {
       background-color: $btn-color-1;
       padding: $defolt-card-p;
       border-radius: $defolt-border-radius;
       font-size: $medium-text;
-      
+
       button {
         background: none;
         border: none;
         color: inherit;
         font: inherit;
         cursor: pointer;
-        
+
         &:hover {
           text-decoration: underline;
         }
@@ -110,16 +142,22 @@
 
     .store-address {
       font-size: $small-text;
+
       p {
         margin: 0;
       }
     }
   }
-  
+
   .footer-disclaimer {
+    padding: 20px 0;
     font-size: $very-small-text;
     color: $discribtion-text-color;
     margin-top: $defolt-card-mb;
-    text-align: center;
+    @include align-c-justify-b;
+
+    p {
+      width: $defolt--width-50-persent;
+    }
   }
 }
