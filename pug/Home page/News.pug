@@ -1,0 +1,13 @@
+section
+  .news-header
+    h2 Новости и блоги
+
+  .news-section
+    .news-cards-container
+      - var newsCards = [1, 2, 3, 4, 5] // Misol uchun 5 ta yangilik kartochkasi
+      each card in newsCards
+        .news-card
+          img.news-image(src="https://mini-io-api.texnomart.uz/newcontent/image/news/Wx6X6E89hsGMVO50eNpkmNjW87rd1rwaos1mYwhd.webp", alt="Как выбрать кондиционер для дома?")
+          .news-info
+            span.news-date 10 апреля 2023
+            h3.news-title Как выбрать кондиционер для дома?
