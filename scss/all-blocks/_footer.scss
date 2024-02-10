@@ -26,8 +26,22 @@
       // Contact info styles...
     }
 
-    .social-links a {
-      // Social links styles...
+    .social-links {
+      margin: 10px 0 ;
+        display: flex;
+      a {
+        background-color: rgb(95, 93, 93);
+        border-radius: 10px;
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+        // Social links styles...
+      }
     }
 
     .app_market_buttons img {
@@ -44,6 +58,16 @@
     .column {
       @include flex;
       @include flex-c;
+
+      h4 {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: white;
+        font-size: $small-text;
+        line-height: 2;
+      }
 
       // Column styles...
     }
