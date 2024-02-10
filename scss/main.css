@@ -20,13 +20,14 @@
 .footer {
   background-color: #333333;
   color: #fff;
-  padding: 30px 40px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .footer .container {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  padding: 16px;
 }
 .footer .footer-top {
   display: flex;
@@ -41,6 +42,10 @@
   flex-direction: column;
   width: 30%;
   margin-bottom: 10px;
+}
+.footer .footer-top .contact-info .vapros {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 .footer .footer-top .social-links {
   margin: 10px 0;
@@ -80,6 +85,13 @@
 }
 .footer .footer-bottom {
   padding-bottom: 40px;
+  font-size: 16px;
+}
+.footer .footer-bottom .store-address p {
+  border-bottom: 1px solid white;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 2px;
 }
 .footer .footer-disclaimer {
   padding: 40px 0;
@@ -87,10 +99,15 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
+  align-items: center;
+  font-size: 13px;
 }
 .footer .footer-disclaimer p {
   width: 50%;
+  color: rgb(176, 178, 179);
+}
+.footer .footer-disclaimer span {
+  width: 100px;
 }
 
 @media (max-width: 768px) {
@@ -631,15 +648,20 @@ main {
   transition: all 2s ease-in-out;
 }
 .carousel .carousel__item {
-  width: 300px !important;
+  width: 500px;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   background-color: #fff;
   margin: 10px;
   border: 1px solid #bdbdbd;
   border-radius: 10px;
-  padding: 15px 50px;
+  padding: 15px 40px;
   text-align: center;
   transition: all 2s ease-in-out;
+  display: flex;
+}
+.carousel .carousel__item img {
+  width: 100%;
+  background-size: cover;
 }
 .carousel .carousel__button {
   position: absolute;

@@ -16,15 +16,20 @@ $caruels-defolt-height: 200px;
     }
 
     .carousel__item {
-        width: $defolt--width-300-px !important;
+        width: $defolt--width-500-px ;
         box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
         background-color: #fff;
         margin: $defolt--width-10-px;
         border: $defolt-border-1;
         border-radius: 10px;
-        padding: 15px 50px;
+        padding: 15px 40px;
         text-align: center;
         transition: all 2s ease-in-out;
+        display: flex;
+        img{
+            width: 100%;
+            background-size: cover;
+        }
 
     }
 

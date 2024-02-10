@@ -1,13 +1,15 @@
 .footer {
   background-color: $bg-2-color;
   color: $defolt-text-color-2;
-  padding: $globe-padding-x $defolt--width-40-px;
+  padding-top: $defolt--height-40-px;
+  padding-left: $defolt--width-20-px;
+  padding-right: $defolt--width-20-px;
 
   .container {
     @include flex;
     @include flex-c;
     max-width: $defolt--width-100-persent;
-    padding: $defolt-card-p;
+    // padding: $defolt-card-p;
   }
 
   .footer-top {
@@ -22,13 +24,17 @@
       @include flex-c;
       width: $defolt--width-30-persent;
       margin-bottom: $defolt-card-mb;
-
+      .vapros {
+        font-size: $big-text;
+        margin-bottom: 20px;
+      }
       // Contact info styles...
     }
 
     .social-links {
-      margin: 10px 0 ;
-        display: flex;
+      margin: 10px 0;
+      display: flex;
+
       a {
         margin: 20px 0;
         background-color: rgb(95, 93, 93);
@@ -40,8 +46,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column
-        // Social links styles...
+        flex-direction: column // Social links styles...
       }
     }
 
@@ -76,6 +81,15 @@
 
   .footer-bottom {
     padding-bottom: 40px;
+    font-size: $big-text;
+
+    .store-address {
+      p {
+        border-bottom: 1px solid white;
+        width: max-content;
+        padding-bottom: 2px;
+      }
+    }
   }
 
   .footer-disclaimer {
@@ -84,9 +98,16 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: $big-text;
+    align-items: center;
+    font-size: $small-text;
+
     p {
       width: $defolt--width-50-persent;
+      color: rgb(176, 178, 179);
+    }
+
+    span {
+      width: 100px;
     }
   }
 }
