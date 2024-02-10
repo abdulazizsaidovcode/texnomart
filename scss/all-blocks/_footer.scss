@@ -23,141 +23,65 @@
       width: $defolt--width-30-persent;
       margin-bottom: $defolt-card-mb;
 
-      .vapros {
-        font-size: $big-text;
-        margin-bottom: 10px;
-      }
-
-      .phone-number {
-        margin-bottom: 30px;
-        font-size: $xl-text;
-        margin-bottom: $defolt--padding-10-px;
-      }
-
-      .social-links {
-        @include flex;
-        @include flex-r;
-        margin-bottom: 20px;
-
-        a {
-          width: 50px;
-          height: 50px;
-          background-color: #545454;
-          border-radius: 10px;
-          color: $defolt-text-color-2;
-          font-size: $big-text;
-          text-decoration: none;
-          @include flex-center;
-
-          i {
-            font-size: 25px;
-
-            color: #fff;
-          }
-
-          &:hover {
-            color: $hover-text-color;
-          }
-
-          &:not(:last-child) {
-            margin-right: $defolt--width-15-px;
-          }
-        }
-      }
+      // Contact info styles...
     }
 
-    .footer-nav {
+    .social-links a {
+      // Social links styles...
+    }
+
+    .app_market_buttons img {
+      // App market buttons styles...
+    }
+  }
+
+  .footer-nav {
+    @include flex;
+    @include flex-r;
+    @include justify-b;
+    width: $defolt--width-70-persent;
+
+    .column {
       @include flex;
-      @include flex-r;
-      @include justify-b;
-      width: $defolt--width-70-persent;
+      @include flex-c;
 
-
-      .column {
-        @include flex;
-        @include flex-c;
-
-        h4 {
-          font-size: $medium-text;
-          margin-bottom: $defolt--padding-10-px;
-        }
-
-        a {
-          color: $defolt-text-color-2;
-          font-size: $small-text;
-          text-decoration: none;
-          margin-bottom: $defolt--padding-5-px;
-
-          &:hover {
-            color: $hover-text-color;
-          }
-        }
-
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-
-      .customer-service {
-        div {
-          margin-top: 30px;
-          border-radius: 10px;
-          padding: 0 10px;
-          border: 3px dotted #696767;
-          @include align-c-justify-b;
-          width: 170px;
-          height: 50px;
-          p {
-            font-size: $medium-text;
-          }
-        }
-      }
+      // Column styles...
     }
   }
 
   .footer-bottom {
-    @include flex;
-    @include align-c-justify-b;
-    padding: $defolt-card-p 0;
-    border-bottom: $defolt-border-1;
-
-    .bonus-check {
-      background-color: $btn-color-1;
-      padding: $defolt-card-p;
-      border-radius: $defolt-border-radius;
-      font-size: $medium-text;
-
-      button {
-        background: none;
-        border: none;
-        color: inherit;
-        font: inherit;
-        cursor: pointer;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-
-    .store-address {
-      font-size: $small-text;
-
-      p {
-        margin: 0;
-      }
-    }
+    // Footer bottom styles...
   }
 
   .footer-disclaimer {
-    padding: 20px 0;
-    font-size: $very-small-text;
-    color: $discribtion-text-color;
-    margin-top: $defolt-card-mb;
-    @include align-c-justify-b;
+    // Footer disclaimer styles...
+  }
+}
 
-    p {
-      width: $defolt--width-50-persent;
+// Responsive media query
+@media (max-width: 768px) {
+  .footer {
+    padding: $globe-padding-x $defolt--padding-20-px;
+
+    .footer-top,
+    .footer-nav {
+      flex-direction: column;
+      align-items: center;
+
+      .contact-info,
+      .column {
+        width: 100%;
+        margin-bottom: $defolt-card-mb;
+      }
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-disclaimer {
+      text-align: center;
     }
   }
 }

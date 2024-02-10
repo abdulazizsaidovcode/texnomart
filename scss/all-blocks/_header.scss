@@ -1,41 +1,70 @@
+// Header asosiy stili
 header {
     width: $defolt--width-100-persent;
     height: $defolt--height-max-content;
-
+  
     .header__carusell {
-        width: $defolt--width-100-persent;
-        height: $defolt--width-100-persent;
-        overflow: hidden;
-        position: relative;
-
-        div {
-            display: flex;
-            width: $defolt--width-max-content;
-            img {
-                width: 100vw;
-                height: $defolt--width-400-px;
-            }
+      width: $defolt--width-100-persent;
+      height: $defolt--width-100-persent;
+      overflow: hidden;
+      position: relative;
+  
+      div {
+        @include flex;
+        width: $defolt--width-max-content;
+  
+        img {
+          width: 100vw;
+          height: $defolt--width-400-px;
         }
+      }
     }
-
+  
     .head-carousel__button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: $bg-5-color;
-        border: $defolt--width-1-px solid $discribtion-text-color;
-        font-size: $very-big-text;
-        border-radius: $defolt--width-50-persent;
-        width: $defolt--width-40-px;
-        height: $defolt--height-40-px;
-        cursor: pointer;
+      @include align-c-justify-b;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $bg-5-color;
+      border: $defolt--width-1-px solid $discribtion-text-color;
+      font-size: $very-big-text;
+      border-radius: $full-border-radius;
+      width: $defolt--width-40-px;
+      height: $defolt--height-40-px;
+      cursor: pointer;
     }
-}
-
-.header__middle {
-    width: $defolt--width-100-persent;
-    background: linear-gradient($bg-6-color,$bg-6-color,$bg-6-color,$bg-6-color,$bg-6-color,$bg-6-color,$bg-6-color,$bg-6-color,transparent);
-    h3 {
-        padding: 0 $globe-padding-x;
+  
+    .header__middle {
+      width: $defolt--width-100-persent;
+      background: linear-gradient($bg-6-color, $bg-6-color, transparent);
+      padding: $globe-padding-y $globe-padding-x;
+  
+      h3 {
+        // @include medium-text;
+      }
     }
-}
+  }
+  
+  // Media so'rovlari
+  @media (max-width: 768px) {
+    header {
+      .header__carusell {
+        height: $defolt--width-300-px; // Mobil qurilmalarda carousel balandligini o'zgartirish
+  
+        img {
+          height: $defolt--width-300-px; // Mobil qurilmalarda rasm balandligini o'zgartirish
+        }
+      }
+  
+      .head-carousel__button {
+        width: $defolt--width-30-px; // Kichikroq tugma
+        height: $defolt--height-30-px; // Kichikroq tugma
+        font-size: $small-text; // Kichikroq matn
+      }
+  
+      .header__middle h3 {
+        font-size: $medium-text; // Kichikroq sarlavha
+      }
+    }
+  }
+  
