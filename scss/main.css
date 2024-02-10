@@ -47,6 +47,7 @@
   display: flex;
 }
 .footer .footer-top .social-links a {
+  margin: 20px 0;
   background-color: rgb(95, 93, 93);
   border-radius: 10px;
   margin-right: 10px;
@@ -77,6 +78,21 @@
   font-size: 13px;
   line-height: 2;
 }
+.footer .footer-bottom {
+  padding-bottom: 40px;
+}
+.footer .footer-disclaimer {
+  padding: 40px 0;
+  border-top: 1px solid rgb(106, 102, 102);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.footer .footer-disclaimer p {
+  width: 50%;
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 30px 20px;
