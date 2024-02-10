@@ -172,7 +172,7 @@ header .head-carousel__button {
 header .header__middle {
   width: 100%;
   background: linear-gradient(#f9f9f9, #f9f9f9, transparent);
-  padding: 15px 30px;
+  padding: 15px 0;
 }
 @media (max-width: 768px) {
   header .header__carusell {

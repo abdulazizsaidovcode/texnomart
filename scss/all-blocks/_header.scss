@@ -37,7 +37,7 @@ header {
     .header__middle {
       width: $defolt--width-100-persent;
       background: linear-gradient($bg-6-color, $bg-6-color, transparent);
-      padding: $globe-padding-y $globe-padding-x;
+      padding: $globe-padding-y 0;
   
       h3 {
         // @include medium-text;
