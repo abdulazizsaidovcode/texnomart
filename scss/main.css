@@ -362,7 +362,7 @@ nav .hide {
   }
 }
 .product {
-  width: 98vw;
+  width: 100vw;
   height: 600px;
   padding: 10px 50px;
   display: flex;
@@ -375,6 +375,47 @@ nav .hide {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.product .title h1 {
+  font-size: 25px;
+}
+.product .title div {
+  font-size: 16px;
+}
+.product .title .button-container {
+  display: flex;
+  gap: 10px;
+}
+.product .title .button-container .button-solid {
+  background-color: #FBC100;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.product .title .button-container .button-solid:hover {
+  background-color: #c89a00;
+}
+.product .title .button-container .button-outline {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+.product .title .button-container .button-outline:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .product .title div {
   display: flex;
@@ -639,7 +680,6 @@ main {
   overflow: hidden;
 }
 .carousel .carousel__container {
-  padding: 0 20px;
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -648,19 +688,40 @@ main {
   transition: all 2s ease-in-out;
 }
 .carousel .carousel__item {
-  width: 500px;
+  width: 200px;
+  height: 70px;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   background-color: #fff;
   margin: 10px;
-  border: 1px solid #bdbdbd;
+  border: 1px solid rgb(240, 237, 237);
   border-radius: 10px;
-  padding: 15px 40px;
+  padding: 15px 30px;
   text-align: center;
   transition: all 2s ease-in-out;
   display: flex;
+  align-items: center;
 }
 .carousel .carousel__item img {
-  width: 100%;
+  width: 110px;
+  background-size: cover;
+}
+.carousel .carousel__item_carousel__item_popular {
+  width: 300px;
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  background-color: #fff;
+  margin: 10px;
+  border: 1px solid rgb(240, 237, 237);
+  border-radius: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  transition: all 2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+.carousel .carousel__item_carousel__item_popular img {
+  width: 110px;
+  height: 100%;
   background-size: cover;
 }
 .carousel .carousel__button {
@@ -676,19 +737,28 @@ main {
   cursor: pointer;
 }
 
+h3 {
+  font-size: 20px;
+  color: rgb(43, 43, 43);
+}
+
 .carousel__button--left {
   left: 10px;
+  background-color: rgba(255, 255, 255, 0.7058823529) !important;
 }
 
 .carousel__button--right {
+  background-color: rgba(255, 255, 255, 0.7058823529) !important;
   right: 10px;
 }
 
 .head-carousel__button--left {
+  background-color: rgba(255, 255, 255, 0.3098039216);
   left: 100px;
 }
 
 .head-carousel__button--right {
+  background-color: rgba(255, 255, 255, 0.3098039216);
   right: 100px;
 }
 
