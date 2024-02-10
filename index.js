@@ -86,7 +86,6 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     }, intervalTime);
   }
-
   function getCard() {
     fetch('https://texnomartapi.pythonanywhere.com/api/api/cards/')
       .then(response => {
@@ -97,7 +96,7 @@ window.addEventListener('DOMContentLoaded', () => {
       })
       .catch(error => {
         console.error('Xato:', error);
-        console.log("salom");
+        console.log("Cardlarni back end dan olib kelish da hatolik bor");
       });
   }
   getCard()
