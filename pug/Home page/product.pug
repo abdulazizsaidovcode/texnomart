@@ -1,6 +1,43 @@
 section.product
   .title
-    h1 Подборки
+    h1 Хит продаж
+    div
+      a(href="") Смотреть все
+      i.fa-solid.fa-right-to-bracket
+
+  .product-head
+    - var products = [1, 2, 3, 4] // Misol uchun 4 ta mahsulot
+    each product in products
+      .product__card
+        .product__rate
+          div
+            i.fa-solid.fa-heart
+          div
+            i.fa-solid.fa-scale-unbalanced-flip
+        div
+          img(src="https://mini-io-api.texnomart.uz/catalog/product/3566/356692/195033/f0e0fd9b-e1ba-4b35-a553-f12fa874f8d1-medium.webp", alt="")
+        .product__discribtion
+          p.product__title Стиральная машина Hisense WFQP9014EVM
+          .product__stars
+            i.fa-solid.fa-star
+            i.fa-solid.fa-star
+            i.fa-solid.fa-star
+            i.fa-solid.fa-star
+            i.fa-solid.fa-star
+          .product__rasrochka
+            p от 68 982 сум / 24 мес.
+          .product__price
+            div
+              p 989 000 
+              span сум
+            .product__shopping
+              i.fa-solid.fa-cart-shopping
+
+section.product
+  .title
+      div.button-container
+        button.button-solid Mazzza narx
+        button.button-outline Рекомендуем
     div
       a(href="") Смотреть все
       i.fa-solid.fa-right-to-bracket

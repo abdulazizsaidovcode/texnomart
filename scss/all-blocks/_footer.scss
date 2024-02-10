@@ -1,13 +1,15 @@
 .footer {
   background-color: $bg-2-color;
   color: $defolt-text-color-2;
-  padding: $globe-padding-x $defolt--width-40-px;
+  padding-top: $defolt--height-40-px;
+  padding-left: $defolt--width-20-px;
+  padding-right: $defolt--width-20-px;
 
   .container {
     @include flex;
     @include flex-c;
     max-width: $defolt--width-100-persent;
-    padding: $defolt-card-p;
+    // padding: $defolt-card-p;
   }
 
   .footer-top {
@@ -22,142 +24,118 @@
       @include flex-c;
       width: $defolt--width-30-persent;
       margin-bottom: $defolt-card-mb;
-
       .vapros {
         font-size: $big-text;
-        margin-bottom: 10px;
-      }
-
-      .phone-number {
-        margin-bottom: 30px;
-        font-size: $xl-text;
-        margin-bottom: $defolt--padding-10-px;
-      }
-
-      .social-links {
-        @include flex;
-        @include flex-r;
         margin-bottom: 20px;
+      }
+      // Contact info styles...
+    }
 
-        a {
-          width: 50px;
-          height: 50px;
-          background-color: #545454;
-          border-radius: 10px;
-          color: $defolt-text-color-2;
-          font-size: $big-text;
-          text-decoration: none;
-          @include flex-center;
+    .social-links {
+      margin: 10px 0;
+      display: flex;
 
-          i {
-            font-size: 25px;
-
-            color: #fff;
-          }
-
-          &:hover {
-            color: $hover-text-color;
-          }
-
-          &:not(:last-child) {
-            margin-right: $defolt--width-15-px;
-          }
-        }
+      a {
+        margin: 20px 0;
+        background-color: rgb(95, 93, 93);
+        border-radius: 10px;
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column // Social links styles...
       }
     }
 
-    .footer-nav {
+    .app_market_buttons img {
+      // App market buttons styles...
+    }
+  }
+
+  .footer-nav {
+    @include flex;
+    @include flex-r;
+    @include justify-b;
+    width: $defolt--width-70-persent;
+
+    .column {
       @include flex;
-      @include flex-r;
-      @include justify-b;
-      width: $defolt--width-70-persent;
+      @include flex-c;
 
-
-      .column {
-        @include flex;
-        @include flex-c;
-
-        h4 {
-          font-size: $medium-text;
-          margin-bottom: $defolt--padding-10-px;
-        }
-
-        a {
-          color: $defolt-text-color-2;
-          font-size: $small-text;
-          text-decoration: none;
-          margin-bottom: $defolt--padding-5-px;
-
-          &:hover {
-            color: $hover-text-color;
-          }
-        }
-
-        &:last-child {
-          margin-right: 0;
-        }
+      h4 {
+        margin-bottom: 10px;
       }
 
-      .customer-service {
-        div {
-          margin-top: 30px;
-          border-radius: 10px;
-          padding: 0 10px;
-          border: 3px dotted #696767;
-          @include align-c-justify-b;
-          width: 170px;
-          height: 50px;
-          p {
-            font-size: $medium-text;
-          }
-        }
+      a {
+        color: white;
+        font-size: $small-text;
+        line-height: 2;
       }
+
+      // Column styles...
     }
   }
 
   .footer-bottom {
-    @include flex;
-    @include align-c-justify-b;
-    padding: $defolt-card-p 0;
-    border-bottom: $defolt-border-1;
-
-    .bonus-check {
-      background-color: $btn-color-1;
-      padding: $defolt-card-p;
-      border-radius: $defolt-border-radius;
-      font-size: $medium-text;
-
-      button {
-        background: none;
-        border: none;
-        color: inherit;
-        font: inherit;
-        cursor: pointer;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
+    padding-bottom: 40px;
+    font-size: $big-text;
 
     .store-address {
-      font-size: $small-text;
-
       p {
-        margin: 0;
+        border-bottom: 1px solid white;
+        width: max-content;
+        padding-bottom: 2px;
       }
     }
   }
 
   .footer-disclaimer {
-    padding: 20px 0;
-    font-size: $very-small-text;
-    color: $discribtion-text-color;
-    margin-top: $defolt-card-mb;
-    @include align-c-justify-b;
+    padding: 40px 0;
+    border-top: 1px solid rgb(106, 102, 102);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $small-text;
 
     p {
       width: $defolt--width-50-persent;
+      color: rgb(176, 178, 179);
+    }
+
+    span {
+      width: 100px;
+    }
+  }
+}
+
+// Responsive media query
+@media (max-width: 768px) {
+  .footer {
+    padding: $globe-padding-x $defolt--padding-20-px;
+
+    .footer-top,
+    .footer-nav {
+      flex-direction: column;
+      align-items: center;
+
+      .contact-info,
+      .column {
+        width: 100%;
+        margin-bottom: $defolt-card-mb;
+      }
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-disclaimer {
+      text-align: center;
     }
   }
 }

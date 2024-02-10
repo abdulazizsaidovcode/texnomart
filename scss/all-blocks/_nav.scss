@@ -2,8 +2,13 @@ nav {
     background-color: $bg-1-color;
     width: $defolt--width-100-persent;
     padding: 0 $defolt--padding-40-px;
+
+    .hide {
+        display: none;
+    }
+
     .nav__top {
-        display: flex;
+        @include flex;
         padding: $defolt--padding-15-px 0;
         width: $defolt--width-100-persent;
 
@@ -31,10 +36,15 @@ nav {
                 }
 
                 input {
-                    background-color: $bg-5-color;
+                    background-color: transparent;
                     width: $defolt--width-100-persent;
                     padding: $defolt--padding-5-px;
+                    border: none;
                     font-size: $medium-text;
+
+                    &:focus {
+                        outline: none;
+                    }
                 }
             }
         }
@@ -60,20 +70,18 @@ nav {
         padding: $defolt--padding-10-px 0;
         width: $defolt--width-100-persent;
 
-        .nav_acsiya_first {
-            background-color: $btn-color-1;
-            color: $bg-1-color;
-            border-radius: $defolt--width-20-px;
-            padding: $defolt--padding-5-px;
-        }
-
+        .nav_acsiya_first,
         .nav_acsiya_second {
             background-color: $btn-color-1;
             color: $bg-1-color;
+            padding: $defolt--padding-5-px;
+            border-radius: $defolt--width-20-px;
+        }
+
+        .nav_acsiya_second {
             border-top-right-radius: $defolt--padding-20-px;
             border-bottom-right-radius: $defolt--padding-20-px;
             border-bottom-left-radius: $defolt--padding-20-px;
-            padding: $defolt--padding-5-px;
         }
 
         div {
@@ -87,7 +95,109 @@ nav {
         ul {
             @include justify-b;
             list-style-type: none;
+            padding: 0;
+            margin: 0;
             width: $defolt--width-60-persent;
+        }
+    }
+}
+
+.nav-toggle-button {
+    display: none;
+    cursor: pointer;
+
+    .fa-times {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-toggle-button {
+        display: block;
+    }
+
+    .nav__top,
+    .nav__bottom {
+        display: none;
+    }
+
+    .nav__top.active,
+    .nav__bottom.active {
+        display: block;
+    }
+}
+
+// General styles for nav
+nav {
+
+    .nav__top,
+    .nav__bottom {
+        // Apply your styles
+    }
+
+    .hide {
+        display: none;
+    }
+}
+
+// Media so'rovlari
+@media (max-width: 768px) {
+    nav {
+        padding: 0 $defolt--padding-20-px;
+
+        .nav__top {
+            flex-direction: column;
+
+            .nav_top_logo,
+            .nav__search,
+            .nav__profile {
+                width: $defolt--width-100-persent;
+                justify-content: center;
+            }
+
+            .nav__search {
+                order: -1; // Qidiruv maydonini yuqoriga ko'tarish
+            }
+        }
+
+        .nav__bottom {
+            flex-direction: column;
+            align-items: center;
+
+            .nav_acsiya_first,
+            .nav_acsiya_second {
+                margin-bottom: $defolt--padding-10-px;
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+
+                li {
+                    padding: $defolt--padding-5-px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0 $defolt--padding-10-px;
+
+        .nav__top {
+            .nav_top_logo {
+                padding-bottom: $defolt--padding-10-px;
+            }
+        }
+
+        .nav__bottom {
+            font-size: $medium-text;
+
+            .nav_acsiya_first,
+            .nav_acsiya_second {
+                font-size: $small-text;
+            }
         }
     }
 }

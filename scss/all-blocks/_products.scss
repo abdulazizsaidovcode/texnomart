@@ -1,7 +1,7 @@
 $card-section-head: 600px;
 
 .product {
-    width: 98vw;
+    width: 100vw;
     height: $card-section-head;
     padding: $defolt--height-10-px $defolt--width-50-px;
     @include justify-c;
@@ -9,6 +9,52 @@ $card-section-head: 600px;
     .title {
         width: $defolt--width-100-persent;
         padding: 0 0 $defolt--width-40-px 0;
+        h1 {
+            font-size: $xl-text;
+        }
+        div {
+            font-size: $big-text;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px; // Adjust the space between buttons as needed
+          
+            .button-solid {
+              background-color: #FBC100; // Yellow background color
+              color: #000; // Text color for the solid button
+              border: none; // No border for the solid button
+              padding: 10px 20px; // Vertical and horizontal padding
+              border-radius: 30px; // Adjust for rounded corners
+              font-weight: bold; // Bold text
+              font-size: 16px; // Adjust the font size as needed
+              text-transform: uppercase; // Uppercase text
+              cursor: pointer; // Pointer cursor on hover
+              outline: none; // No outline for accessibility
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Optional: add a shadow for depth
+          
+              &:hover {
+                background-color: darken(#FBC100, 10%); // Darken the button color on hover
+              }
+            }
+          
+            .button-outline {
+              background-color: transparent; // Transparent background for the outline button
+              color: #000; // Text color for the outline button
+              border: 2px solid #000; // Border for the outline button
+              padding: 8px 18px; // Adjust padding to account for the border
+              border-radius: 30px; // Adjust for rounded corners
+              font-weight: bold; // Bold text
+              font-size: 16px; // Adjust the font size as needed
+              text-transform: uppercase; // Uppercase text
+              cursor: pointer; // Pointer cursor on hover
+              outline: none; // No outline for accessibility
+          
+              &:hover {
+                background-color: rgba(0, 0, 0, 0.1); // Slight background on hover for the outline button
+              }
+            }
+          }
+          
         @include align-c-justify-b;
         div {
             @include align-c-justify-b;

@@ -1,8 +1,9 @@
-// Assuming the variables and mixins are defined in 'variables.scss' and 'mixins.scss'
+// services.scss
 
-
+// Asosiy .services stil
 .services {
     padding: $defolt--width-40-px;
+
     .services_title {
         @include flex-center;
         padding: $defolt--height-20-px 0;
@@ -28,8 +29,6 @@
             text-align: center;
             transition: border-color 0.3s;
 
-            
-
             .icon-box {
                 @include flex-center;
 
@@ -45,7 +44,6 @@
                 width: $defolt--width-100-persent;
                 height: $defolt--height-max-content;
                 margin-bottom: $defolt--padding-10-px;
-
             }
 
             .title {
@@ -60,8 +58,28 @@
             }
         }
     }
-
-
 }
 
-// Make sure you have corresponding classes for your icons and they are properly styled.
+// Media so'rovlari uchun responsive dizayn
+@media (max-width: 768px) {
+    .services {
+        padding: $defolt--padding-20-px; // Mobil ekranlar uchun paddingni o'zgartirish
+
+        .services_title {
+            padding: $defolt--padding-10-px 0;
+        }
+
+        .services_describtion {
+            flex-direction: column; // Mobil ekranlar uchun vertikal joylashuv
+
+            .service-card {
+                border-right: none; // Mobil ekranlar uchun o'ng tomonidagi borderlarni olib tashlash
+                width: 100%; // Karta kengligini to'liq ekran kengligiga moslashtirish
+
+                &:not(:last-child) {
+                    margin-bottom: $defolt-card-mb; // Kartalar orasidagi bo'shliqni saqlab qolish
+                }
+            }
+        }
+    }
+}

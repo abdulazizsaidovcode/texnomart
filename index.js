@@ -1,10 +1,26 @@
 window.addEventListener('DOMContentLoaded', () => {
+
+  // -----===== responsive nav ===------ //
+  var toggleButton = document.querySelector('.nav-toggle-button');
+  var navTop = document.querySelector('.nav__top');
+  var navBottom = document.querySelector('.nav__bottom');
+
+  toggleButton.addEventListener('click', function () {
+    navTop.classList.toggle('active');
+    navBottom.classList.toggle('active');
+    toggleButton.querySelector('.fa-bars').classList.toggle('hide');
+    toggleButton.querySelector('.fa-times').classList.toggle('hide');
+  });
+  // -----===== responsive nav ===------ //
+
+
+  // -------===== lodaer ====------ //
   function loader() {
     const load = document.querySelector('.loader')
     setTimeout(() => load.style.display = 'none', 2200)
   }
   loader()
-
+  // -------===== lodaer ====------ //
 
 
 
@@ -74,7 +90,7 @@ window.addEventListener('DOMContentLoaded', () => {
   function getCard() {
     fetch('https://texnomartapi.pythonanywhere.com/api/api/cards/')
       .then(response => {
-        return response.json(); 
+        return response.json();
       })
       .then(data => {
         console.log(data);

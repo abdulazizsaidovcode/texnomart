@@ -1,32 +1,36 @@
 nav
+  button.nav-toggle-button
+    i.fa.fa-bars
+    i.fa.fa-times.hide
+
   .nav__top
     .nav_top_logo
-      img(src="https://texnomart.uz/_nuxt/img/texnomart-logo_new_year.35f5572.svg", alt="logo")
+      img(src="https://texnomart.uz/_nuxt/img/texnomart-logo_new_year.35f5572.svg", alt="Texnomart Logo")
       button.nav-category-button
         i.fa-solid.fa-bars
-        i.fa-solid.fa-xmark
+        i.fa-solid.fa-xmark.hide
         p Category
     .nav__search
       div
         i.fa-solid.fa-magnifying-glass
-        input(type="text", placeholder="search")
+        input(type="text", placeholder="Search")
     .nav__profile
       div
         i.fa-regular.fa-user
-        | vxot
+        | Profile
       div
         i.fa-regular.fa-heart
-        | vxot
+        | Favorites
       div
         i.fa-solid.fa-cart-shopping
-        | vxot
+        | Cart
 
-  .nav__bottom
+  .nav__bottom.hide
     div
       i.fa-solid.fa-fire
-      p aksiya
-    div.nav_acsiya_first mazza narxi
-    div.nav_acsiya_second some thing
+      p Aksiya
+    div.nav_acsiya_first Mazza narxi
+    div.nav_acsiya_second Some thing
     ul
       li PRODUCT
       li SOLUTIONS

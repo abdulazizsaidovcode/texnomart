@@ -10,6 +10,7 @@ $xxl-text: 40px;
 
 //------------- globe padding -------------
 $globe-padding-x: 30px;
+$globe-padding-y: 15px;
 
 //------------- font colors-------------
 
@@ -100,6 +101,8 @@ $defolt--width-100-px:100px;
 $defolt--width-200-px:200px;
 $defolt--width-300-px:300px;
 $defolt--width-400-px:400px;
+$defolt--width-500-px:500px;
+$defolt--width-600-px:600px;
 
 // %
 $defolt--height-10-persent:10%;
@@ -138,6 +141,8 @@ $defolt--height-100-px:100px;
 $defolt--height-200-px:200px;
 $defolt--height-300-px:300px;
 $defolt--height-400-px:400px;
+$defolt--height-500-px:500px;
+$defolt--height-600-px:600px;
 
 
 //------------------- paddings---------------------
@@ -226,91 +231,4 @@ $defolt--padding-100-px:100px;
 
 
 
-// // Typography map
-// $typography: (
-//   very-small: 12px,
-//   small: 13px,
-//   medium: 14px,
-//   big: 16px,
-//   very-big: 20px,
-//   xl: 25px,
-//   xxl: 40px
-// );
 
-// // Padding map
-// $padding: (
-//   small: 10px,
-//   medium: 20px,
-//   large: 30px,
-//   x-large: 40px
-// );
-
-// // Width and height map
-// $sizes: (
-//   max-content: max-content,
-//   vw-100: 100vw,
-//   vh-100: 100vh,
-//   w-10-percent: 10%,
-//   w-100-percent: 100%,
-//   h-100-percent: 100%
-// );
-
-// // Color map
-// $colors: (
-//   default: #000000,
-//   inverse: #fff,
-//   description: #bdbdbd,
-//   description-2: #75757c,
-//   hover: #fbc100,
-//   bg-1: #f5f5f5,
-//   bg-2: #333333,
-//   bg-3: #f4f4f4,
-//   bg-4: #fbc100,
-//   bg-5: #fff,
-//   bg-6: #f9f9f9,
-//   button-1: #fbc100,
-//   button-2: #fb0000
-// );
-
-// // Border styles map
-// $borders: (
-//   default: 1px solid #bdbdbd,
-//   highlight: 1px solid #fbc100
-// );
-
-// // Border-radius map
-// $radius: (
-//   default: 10px,
-//   rounded: 15px,
-//   full: 50%
-// );
-
-// // Card styles map
-// $card-styles: (
-//   padding: 16px,
-//   margin-x: 10px,
-//   margin-bottom: 10px,
-//   width: 275px,
-//   border-radius: 16px,
-//   border: 1px,
-//   border-color: #bdbdbd
-// );
-
-// // Flex mixin with default values
-// @mixin flex($direction: row, $wrap: nowrap, $justify: flex-start, $align: stretch) {
-//   display: flex;
-//   flex-direction: $direction;
-//   flex-wrap: $wrap;
-//   justify-content: $justify;
-//   align-items: $align;
-// }
-
-// // Flex center mixin
-// @mixin flex-center {
-//   @include flex(row, nowrap, center, center);
-// }
-
-// // Function to get map values
-// @function get($map, $key) {
-//   @return map-get(map-get($map, $key), value);
-// }
