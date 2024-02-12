@@ -47,27 +47,27 @@ section.product
   .product-head
     - var products = [1, 2, 3, 4 ,6] // Misol uchun 4 ta mahsulot
     each product in products
-      .product__card(href="../Product page/index.html") 
+      .product__card
         .product__rate
           div
             i.fa-solid.fa-heart
           div
             i.fa-solid.fa-scale-unbalanced-flip
-        div
-          img(src="https://mini-io-api.texnomart.uz/catalog/product/3566/356692/195033/f0e0fd9b-e1ba-4b35-a553-f12fa874f8d1-medium.webp" alt="")
+        a(href="./product.html")
+          img(src="https://mini-io-api.texnomart.uz/catalog/product/3566/356692/195033/f0e0fd9b-e1ba-4b35-a553-f12fa874f8d1-medium.webp"  alt="")
         .product__discribtion
           p.product__title Стиральная машина Hisense WFQP9014EVM
-          .product__stars
+          a.product__stars(href="./product.html")
             i.fa-solid.fa-star
             i.fa-solid.fa-star
             i.fa-solid.fa-star
             i.fa-solid.fa-star
             i.fa-solid.fa-star
-          .product__rasrochka
+          a.product__rasrochka(href="./product.html")
             p от 68 982 сум / 24 мес.
           .product__price
             div
-              p 989 000 
+              p 989 000    
               span сум
             .product__shopping
               i.fa-solid.fa-cart-shopping
