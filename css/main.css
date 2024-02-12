@@ -239,22 +239,26 @@ body {
     padding: 0 30px;
   }
 }
+
 .section_first {
   width: 100%;
   overflow: hidden;
   border-top: 1px solid #333;
 }
+
 .section_first .section_first__top {
   width: 100%;
   padding: 30px 0px;
   display: flex;
   justify-content: center;
 }
+
 .section_first .section_first__bottom {
   width: auto;
   padding: 30px 0px;
   display: flex;
 }
+
 .section_first img {
   padding: 10px;
   margin: 2px;
@@ -285,6 +289,7 @@ header {
   align-items: center;
   flex-direction: column;
 }
+
 header .header__top {
   width: 60%;
   display: flex;
@@ -293,6 +298,7 @@ header .header__top {
   align-items: center;
   text-align: center;
 }
+
 header .header__bottom {
   width: 60%;
   display: flex;
@@ -312,25 +318,32 @@ nav {
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
+
 nav .nav__logo {
   display: flex;
   align-items: center;
 }
+
 nav .nav__list {
   display: flex;
   align-items: center;
   width: 40%;
 }
+
 nav .nav__list ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
+
 nav .nav__signin {
   display: flex;
   align-items: center;
 }
+
 nav .nav__signin p {
   margin-left: 5px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
