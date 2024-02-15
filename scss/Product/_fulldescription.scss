@@ -1,67 +1,84 @@
 @import '../all-blocks/variables';
 
 .product-details {
-  padding: $globe-padding-y $globe-padding-x;
-  background-color: $bg-1-color;
+    padding: 50px $globe-padding-x;
+    background-color: $bg-1-color;
 
-  .title {
-    font-size: $xxl-text;
-    color: $defolt-text-color;
-    margin-bottom: $defolt--padding-20-px;
-  }
-
-  .specs, .description {
-    margin-bottom: $defolt--padding-30-px;
-    
-    .section-heading {
-      font-size: $xl-text;
-      color: $defolt-text-color;
-      margin-bottom: $defolt--padding-15-px;
+    .title {
+        font-size: $xl-text;
+        margin-bottom: 30px;
+        color: $defolt-text-color;
+        margin-bottom: $defolt--padding-20-px;
     }
 
-    .spec-list {
-      list-style-type: none;
-      
-      li {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: $defolt-border-1;
-        padding: $defolt--padding-10-px 0;
-        
-        .spec-name {
-          font-size: $medium-text;
-          color: $defolt-text-color;
+    .specs,
+    .description {
+        margin-bottom: $defolt--padding-30-px;
+
+        .spetial-top {
+            width: 100%;
+            display: flex;
+            // @include justify-b;
+            .spec-list {
+                list-style-type: none;
+                margin-right: 10px;
+                width: 40%;
+
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px dashed rgb(164, 163, 163);
+                    padding: $defolt--padding-10-px 100px $defolt--padding-10-px 0;
+
+                    .spec-name {
+                        font-size: $medium-text;
+                        color: $defolt-text-color;
+                    }
+
+                    .spec-value {
+                        font-size: $medium-text;
+                        color: $discribtion-text-color;
+                    }
+                }
+            }
         }
 
-        .spec-value {
-          font-size: $medium-text;
-          color: $discribtion-text-color;
+        .section-heading {
+            font-size: $big-text;
+            color: $defolt-text-color;
+            margin-bottom: $defolt--padding-15-px;
+            
         }
-      }
-    }
-  }
+        p {
+            width: 70%;
+            font-size: $small-text;
+            line-height: 2;
+        }
 
-  .toggle-specs {
-    background-color: $btn-color-1;
-    border-radius: $defolt-border-radius;
-    color: $defolt-text-color-2;
-    font-size: $medium-text;
-    padding: $defolt--padding-10-px $defolt--padding-20-px;
-    cursor: pointer;
-    border: none;
-    &:hover {
-      background-color: darken($btn-color-1, 10%);
     }
-  }
+
+    .toggle-specs {
+        background-color: $btn-color-1;
+        border-radius: $defolt-border-radius;
+        color: $defolt-text-color-2;
+        font-size: $medium-text;
+        padding: $defolt--padding-10-px $defolt--padding-20-px;
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+            background-color: darken($btn-color-1, 10%);
+        }
+    }
 }
 
 // Responsive styling
 @media (max-width: 768px) {
-  .product-details {
-    .specs {
-      .spec-list {
-        flex-direction: column;
-      }
+    .product-details {
+        .specs {
+            .spec-list {
+                flex-direction: column;
+            }
+        }
     }
-  }
 }

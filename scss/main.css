@@ -1245,38 +1245,58 @@ h3 {
   }
 }
 .product-details {
-  padding: 15px 30px;
+  padding: 50px 30px;
   background-color: #f5f5f5;
 }
 .product-details .title {
-  font-size: 40px;
+  font-size: 25px;
+  margin-bottom: 30px;
   color: #000000;
   margin-bottom: 20px;
 }
-.product-details .specs, .product-details .description {
+.product-details .specs,
+.product-details .description {
   margin-bottom: 30px;
 }
-.product-details .specs .section-heading, .product-details .description .section-heading {
-  font-size: 25px;
+.product-details .specs .spetial-top,
+.product-details .description .spetial-top {
+  width: 100%;
+  display: flex;
+}
+.product-details .specs .spetial-top .spec-list,
+.product-details .description .spetial-top .spec-list {
+  list-style-type: none;
+  margin-right: 10px;
+  width: 40%;
+}
+.product-details .specs .spetial-top .spec-list li,
+.product-details .description .spetial-top .spec-list li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgb(164, 163, 163);
+  padding: 10px 100px 10px 0;
+}
+.product-details .specs .spetial-top .spec-list li .spec-name,
+.product-details .description .spetial-top .spec-list li .spec-name {
+  font-size: 14px;
+  color: #000000;
+}
+.product-details .specs .spetial-top .spec-list li .spec-value,
+.product-details .description .spetial-top .spec-list li .spec-value {
+  font-size: 14px;
+  color: #bdbdbd;
+}
+.product-details .specs .section-heading,
+.product-details .description .section-heading {
+  font-size: 16px;
   color: #000000;
   margin-bottom: 15px;
 }
-.product-details .specs .spec-list, .product-details .description .spec-list {
-  list-style-type: none;
-}
-.product-details .specs .spec-list li, .product-details .description .spec-list li {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #bdbdbd;
-  padding: 10px 0;
-}
-.product-details .specs .spec-list li .spec-name, .product-details .description .spec-list li .spec-name {
-  font-size: 14px;
-  color: #000000;
-}
-.product-details .specs .spec-list li .spec-value, .product-details .description .spec-list li .spec-value {
-  font-size: 14px;
-  color: #bdbdbd;
+.product-details .specs p,
+.product-details .description p {
+  width: 70%;
+  font-size: 13px;
+  line-height: 2;
 }
 .product-details .toggle-specs {
   background-color: #fb0000;
