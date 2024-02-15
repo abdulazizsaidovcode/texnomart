@@ -7,12 +7,12 @@
   padding: $globe-padding-y $globe-padding-x;
 
   .image-gallery {
-    @include flex-c;
     @include align-c;
+    @include flex-r;
     margin-right: $defolt--padding-20-px;
 
     .thumbnails {
-      @include flex-r;
+      @include flex-c;
       @include justify-c;
       gap: $defolt--padding-10-px;
 
@@ -39,18 +39,20 @@
     @include flex-c;
 
     h1.title {
-      font-size: $xxl-text;
+      font-size: $big-text;
       margin-bottom: $defolt--padding-20-px;
     }
 
-    .actions {
-      // Styles for favorite and compare buttons
-    }
+    // .actions {
+    //   // Styles for favorite and compare buttons
+    // }
 
     .brief {
       .spec {
         @include flex-r;
         @include justify-b;
+        margin: 10px 0;
+        color: rgb(110, 110, 110);
         margin-bottom: $defolt--padding-5-px;
 
         &:after {
@@ -63,6 +65,7 @@
     a.all-specs {
       color: $hover-text-color;
       text-decoration: none;
+      margin-top: 30px;
       &:hover {
         text-decoration: underline;
       }
@@ -76,7 +79,9 @@
     @include flex-c;
 
     .image-gallery {
-      
+      .thumbnails {
+        @include flex-c;
+      }
     }
   }
 }

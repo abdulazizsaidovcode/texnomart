@@ -2,24 +2,31 @@
   .image-gallery
     .thumbnails
       each _, i in [1, 2, 3, 4]
-        img.thumbnail(src=`thumbnail-image-${i}.jpg`, alt=`Thumbnail ${i}`)
+        img.thumbnail(src='https://mini-io-api.texnomart.uz/catalog/product/3568/356819/195846/1420a510-923f-4a42-a582-299ae10cf0f5.webp', alt=`Thumbnail ${i}`)
 
     .main-image-container
-      img.main-image(src="main-product-image.jpg", alt="Main Product Image")
+      img.main-image(src="https://mini-io-api.texnomart.uz/catalog/product/3568/356819/195846/1420a510-923f-4a42-a582-299ae10cf0f5.webp", alt="Main Product Image")
 
   .product-info
-    h1.title Product Title
+    h1.title Коротко о товаре
     .ratings
       // Insert ratings here, e.g., stars
-    .actions
-      button.favorite Add to Favorites
-      button.compare Compare
 
     .brief
-      .spec(freq="Frequency of screen update" value="90Hz")
-      .spec(cam-front="Front camera" value="8 MP")
-      .spec(cam-rear="Rear camera" value="50 MP")
-      .spec(cam-count="Number of cameras" value="3")
-      .spec(resolution="Screen resolution" value="720 x 1600")
+      .spec 
+        p Частота обновления экрана 
+        span 90
+      .spec 
+        p Фронтальная камера
+        span 8 МП
+      .spec 
+        p Основная Камера 
+        span 50 МП
+      .spec 
+        p Количество камер 
+        span 3
+      .spec 
+        p Разрешение экрана 
+        span 720 x 1600
 
-    a.all-specs(href="#") View all specifications
+    a.all-specs(href="#") Все характеристики

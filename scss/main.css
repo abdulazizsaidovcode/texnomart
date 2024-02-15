@@ -1179,13 +1179,13 @@ h3 {
   padding: 15px 30px;
 }
 .product-display .image-gallery {
-  flex-direction: column;
   display: flex;
   align-items: center;
+  flex-direction: row;
   margin-right: 20px;
 }
 .product-display .image-gallery .thumbnails {
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -1207,13 +1207,15 @@ h3 {
   flex-direction: column;
 }
 .product-display .product-info h1.title {
-  font-size: 40px;
+  font-size: 16px;
   margin-bottom: 20px;
 }
 .product-display .product-info .brief .spec {
   flex-direction: row;
   display: flex;
   justify-content: space-between;
+  margin: 10px 0;
+  color: rgb(110, 110, 110);
   margin-bottom: 5px;
 }
 .product-display .product-info .brief .spec:after {
@@ -1223,6 +1225,7 @@ h3 {
 .product-display .product-info a.all-specs {
   color: #fbc100;
   text-decoration: none;
+  margin-top: 30px;
 }
 .product-display .product-info a.all-specs:hover {
   text-decoration: underline;
@@ -1232,9 +1235,64 @@ h3 {
   .product-display {
     flex-direction: column;
   }
+  .product-display .image-gallery .thumbnails {
+    flex-direction: column;
+  }
 }
 @media (max-width: 480px) {
   .product-display .image-gallery .main-image-container .main-image {
     width: 300px;
+  }
+}
+.product-details {
+  padding: 15px 30px;
+  background-color: #f5f5f5;
+}
+.product-details .title {
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.product-details .specs, .product-details .description {
+  margin-bottom: 30px;
+}
+.product-details .specs .section-heading, .product-details .description .section-heading {
+  font-size: 25px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.product-details .specs .spec-list, .product-details .description .spec-list {
+  list-style-type: none;
+}
+.product-details .specs .spec-list li, .product-details .description .spec-list li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #bdbdbd;
+  padding: 10px 0;
+}
+.product-details .specs .spec-list li .spec-name, .product-details .description .spec-list li .spec-name {
+  font-size: 14px;
+  color: #000000;
+}
+.product-details .specs .spec-list li .spec-value, .product-details .description .spec-list li .spec-value {
+  font-size: 14px;
+  color: #bdbdbd;
+}
+.product-details .toggle-specs {
+  background-color: #fb0000;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+}
+.product-details .toggle-specs:hover {
+  background-color: #c80000;
+}
+
+@media (max-width: 768px) {
+  .product-details .specs .spec-list {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
