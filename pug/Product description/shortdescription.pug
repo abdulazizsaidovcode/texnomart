@@ -1,23 +1,24 @@
-section.product-display
+.product-container
   .image-gallery
     .thumbnails
-      - for (var i = 1; i <= 4; i++)
-        img.thumbnail(src="path/to/image" alt="Product Image Thumbnail")
-    img.main-image(src="path/to/main/image" alt="Main Product Image")
-  .product-info
-    h1.title Main Product Title
+      img.thumbnail(src="path-to-thumbnail1.jpg" alt="Product Thumbnail")
+      img.thumbnail(src="path-to-thumbnail2.jpg" alt="Product Thumbnail")
+      img.thumbnail(src="path-to-thumbnail3.jpg" alt="Product Thumbnail")
+    .main-image
+      img(src="path-to-main-image.jpg" alt="Main Product Image")
+
+  .product-details
+    h1.title Product Name
     .ratings
-      span Star Ratings Here 
-    .favorites
-      span Add to Favorites 
-    .compare
-      span Compare
-    .product-brief
-      .specification
-        span.label Processor
-        span.value Snapdragon 8 Gen 2
-      // Add more specifications here
-      .specification
-        span.label Display Type
-        span.value Dynamic AMOLED 2X
-    a.view-all(href="#") View All Specifications 
+      // Insert rating stars here
+    .product-actions
+      button.favorite Add to Favorites
+      button.compare Add to Compare
+    .short-description
+      ul
+        li Frequency of Screen Update: 90
+        li Front Camera: 8 MP
+        li Main Camera: 50 MP
+        li Number of Cameras: 3
+        li Screen Resolution: 720 x 1600
+      a.view-all(href="#") View All Specifications

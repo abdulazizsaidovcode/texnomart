@@ -1,60 +1,65 @@
-@import 'variables';
-@import 'mixins';
+@import '../all-blocks/variables';
+@import '../all-blocks/variables';
 
-.product-display {
+.product-container {
   @include flex;
-  @include align-c-justify-b;
-  padding: $globe-padding-y $globe-padding-x;
+  @include justify-b;
   background-color: $bg-5-color;
+  padding: $globe-padding-y $globe-padding-x;
 
   .image-gallery {
     @include flex-c;
+    @include align-c;
     margin-right: $defolt--padding-20-px;
 
     .thumbnails {
       @include flex-r;
-      margin-bottom: $defolt--padding-20-px;
-
+      @include justify-c;
+      gap: $defolt--padding-10-px;
+      
       .thumbnail {
         width: $defolt--width-100-px;
         height: $defolt--height-100-px;
-        margin-right: $defolt--padding-10-px;
         cursor: pointer;
         &:hover {
-          border-color: $hover-text-color;
+          border: 2px solid $hover-text-color;
         }
       }
     }
 
     .main-image {
-      width: $defolt--width-400-px;
-      height: $defolt--height-300-px;
-      border-radius: $defolt-border-radius;
+      img {
+        width: $defolt--width-500-px;
+        height: auto; // Maintain aspect ratio
+        border-radius: $defolt-border-radius;
+      }
     }
   }
 
-  .product-info {
+  .product-details {
     @include flex-c;
-    color: $defolt-text-color;
 
     .title {
       font-size: $xxl-text;
+      margin-bottom: $defolt--padding-20-px;
     }
 
-    .ratings, .favorites, .compare {
+    .ratings {
+      // Style for ratings
       margin-bottom: $defolt--padding-10-px;
     }
 
-    .product-brief {
-      .specification {
-        @include flex-r;
-        @include justify-b;
-        margin-bottom: $defolt--padding-5-px;
-        .label {
-          color: $discribtion-text-color-2;
-        }
-        .value {
-          font-weight: bold;
+    .product-actions {
+      // Style for actions like 'favorite' and 'compare'
+      margin-bottom: $defolt--padding-10-px;
+    }
+
+    .short-description {
+      ul {
+        list-style: none;
+        font-size: $small-text;
+        li {
+          margin-bottom: $defolt--padding-5-px;
         }
       }
     }
@@ -69,4 +74,14 @@
   }
 }
 
-
+// Responsive adjustments
+@media (max-width: 768px) {
+  .product-container {
+    @include flex-c;
+    .image-gallery {
+      .thumbnails {
+        @include justify-c;
+      }
+    }
+  }
+}
