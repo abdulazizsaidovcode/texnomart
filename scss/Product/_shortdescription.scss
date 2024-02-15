@@ -1,7 +1,6 @@
 @import '../all-blocks/variables';
-@import '../all-blocks/variables';
 
-.product-container {
+.product-display {
   @include flex;
   @include justify-b;
   background-color: $bg-5-color;
@@ -16,7 +15,7 @@
       @include flex-r;
       @include justify-c;
       gap: $defolt--padding-10-px;
-      
+
       .thumbnail {
         width: $defolt--width-100-px;
         height: $defolt--height-100-px;
@@ -27,44 +26,41 @@
       }
     }
 
-    .main-image {
-      img {
+    .main-image-container {
+      .main-image {
         width: $defolt--width-500-px;
-        height: auto; // Maintain aspect ratio
+        height: auto;
         border-radius: $defolt-border-radius;
       }
     }
   }
 
-  .product-details {
+  .product-info {
     @include flex-c;
 
-    .title {
+    h1.title {
       font-size: $xxl-text;
       margin-bottom: $defolt--padding-20-px;
     }
 
-    .ratings {
-      // Style for ratings
-      margin-bottom: $defolt--padding-10-px;
+    .actions {
+      // Styles for favorite and compare buttons
     }
 
-    .product-actions {
-      // Style for actions like 'favorite' and 'compare'
-      margin-bottom: $defolt--padding-10-px;
-    }
+    .brief {
+      .spec {
+        @include flex-r;
+        @include justify-b;
+        margin-bottom: $defolt--padding-5-px;
 
-    .short-description {
-      ul {
-        list-style: none;
-        font-size: $small-text;
-        li {
-          margin-bottom: $defolt--padding-5-px;
+        &:after {
+          content: attr(value);
+          font-weight: bold;
         }
       }
     }
 
-    .view-all {
+    a.all-specs {
       color: $hover-text-color;
       text-decoration: none;
       &:hover {
@@ -74,14 +70,26 @@
   }
 }
 
-// Responsive adjustments
+// Responsive styling
 @media (max-width: 768px) {
-  .product-container {
+  .product-display {
     @include flex-c;
+
     .image-gallery {
-      .thumbnails {
-        @include justify-c;
+      
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .product-display {
+    .image-gallery {
+      .main-image-container {
+        .main-image {
+          width: $defolt--width-300-px;
+        }
       }
     }
   }
 }
+

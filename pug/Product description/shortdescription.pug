@@ -1,24 +1,25 @@
-.product-container
+.product-display
   .image-gallery
     .thumbnails
-      img.thumbnail(src="path-to-thumbnail1.jpg" alt="Product Thumbnail")
-      img.thumbnail(src="path-to-thumbnail2.jpg" alt="Product Thumbnail")
-      img.thumbnail(src="path-to-thumbnail3.jpg" alt="Product Thumbnail")
-    .main-image
-      img(src="path-to-main-image.jpg" alt="Main Product Image")
+      each _, i in [1, 2, 3, 4]
+        img.thumbnail(src=`thumbnail-image-${i}.jpg`, alt=`Thumbnail ${i}`)
 
-  .product-details
-    h1.title Product Name
+    .main-image-container
+      img.main-image(src="main-product-image.jpg", alt="Main Product Image")
+
+  .product-info
+    h1.title Product Title
     .ratings
-      // Insert rating stars here
-    .product-actions
+      // Insert ratings here, e.g., stars
+    .actions
       button.favorite Add to Favorites
-      button.compare Add to Compare
-    .short-description
-      ul
-        li Frequency of Screen Update: 90
-        li Front Camera: 8 MP
-        li Main Camera: 50 MP
-        li Number of Cameras: 3
-        li Screen Resolution: 720 x 1600
-      a.view-all(href="#") View All Specifications
+      button.compare Compare
+
+    .brief
+      .spec(freq="Frequency of screen update" value="90Hz")
+      .spec(cam-front="Front camera" value="8 MP")
+      .spec(cam-rear="Rear camera" value="50 MP")
+      .spec(cam-count="Number of cameras" value="3")
+      .spec(resolution="Screen resolution" value="720 x 1600")
+
+    a.all-specs(href="#") View all specifications
