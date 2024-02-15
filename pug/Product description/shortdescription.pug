@@ -1,24 +1,23 @@
-
-    section.product-display
-      .image-gallery
-        .thumbnails
-          - for (var i = 1; i <= 4; i++)
-            img.thumbnail(src="path/to/image" alt="Product Image Thumbnail")
-        img.main-image(src="path/to/main/image" alt="Main Product Image")
-      .product-info
-        h1.title Main Product Title
-        .ratings
-          span Star Ratings Here 
-        .favorites
-          span Add to Favorites 
-        .compare
-          span Compare
-        .product-brief
-          .specification
-            span.label Processor
-            span.value Snapdragon 8 Gen 2
-          // Add more specifications here
-          .specification
-            span.label Display Type
-            span.value Dynamic AMOLED 2X
-        a.view-all(href="#") View All Specifications 
+section.product-display
+  .image-gallery
+    .thumbnails
+      - for (var i = 1; i <= 4; i++)
+        img.thumbnail(src="path/to/image" alt="Product Image Thumbnail")
+    img.main-image(src="path/to/main/image" alt="Main Product Image")
+  .product-info
+    h1.title Main Product Title
+    .ratings
+      span Star Ratings Here 
+    .favorites
+      span Add to Favorites 
+    .compare
+      span Compare
+    .product-brief
+      .specification
+        span.label Processor
+        span.value Snapdragon 8 Gen 2
+      // Add more specifications here
+      .specification
+        span.label Display Type
+        span.value Dynamic AMOLED 2X
+    a.view-all(href="#") View All Specifications 
