@@ -1315,4 +1315,151 @@ h3 {
   .product-details .specs .spec-list {
     flex-direction: column;
   }
+}
+.product-description {
+  width: 100vw;
+  height: 600px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.product-description .title {
+  width: 100%;
+  padding: 0 0 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-description .title h1 {
+  font-size: 25px;
+}
+.product-description .title div {
+  font-size: 16px;
+}
+.product-description .title .button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  font-size: 13px;
+}
+.product-description .title .button-container h3 {
+  margin-bottom: 10px;
+}
+.product-description .title .button-container .button-solid {
+  background-color: #FBC100;
+  color: #000;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.product-description .title .button-container .button-solid:hover {
+  background-color: #c89a00;
+}
+.product-description .title .button-container .button-outline {
+  background-color: transparent;
+  color: #5a5959;
+  border: 1px solid #bbb9b9;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  margin-left: 5px;
+}
+.product-description .title .button-container .button-outline:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.product-description .title div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-description .title i {
+  margin-left: 10px;
+}
+.product-description .product-head-description {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.product-description .product-head-description .product__card {
+  margin-left: 10px;
+  position: relative;
+  width: 275px;
+  border: 1px solid #bdbdbd;
+  border-radius: 16px;
+  padding: 15px;
+}
+.product-description .product-head-description .product__card img {
+  width: 100%;
+}
+.product-description .product-head-description .product__card .product__rate {
+  position: absolute;
+  right: 10px;
+}
+.product-description .product-head-description .product__card .product__rate div {
+  font-size: 16px;
+  border: 1px solid #bdbdbd;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3px;
+}
+.product-description .product-head-description .product__card .product__rate div .fa-heart {
+  font-weight: 500 !important;
+}
+.product-description .product-head-description .product__card .product__discribtion-description {
+  width: 100%;
+}
+.product-description .product-head-description .product__card .product__discribtion-description .product__title {
+  font-size: 14px;
+  color: #75757c;
+}
+.product-description .product-head-description .product__card .product__discribtion-description .product__stars {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #75757c;
+}
+.product-description .product-head-description .product__card .product__discribtion-description .product__rasrochka {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px;
+  font-size: 14px;
+  background: #f4f4f4;
+  color: #000000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.product-description .product-head-description .product__card .product__discribtion-description .product__price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-description .product-head-description .product__card .product__discribtion-description .product__price div {
+  display: flex;
+}
+.product-description .product-head-description .product__card .product__discribtion-description .product__price div p {
+  margin-right: 5px;
+}
+.product-description .product-head-description .product__card .product__discribtion-description .product__price .product__shopping {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+  border: 1px solid #fbc100;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */

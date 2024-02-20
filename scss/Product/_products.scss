@@ -1,0 +1,159 @@
+$card-section-head: 600px;
+
+.product-description {
+    width: 100vw;
+    height: $card-section-head;
+    padding: $defolt--height-10-px $defolt--width-20-px;
+    @include justify-c;
+    flex-direction: column;
+    .title {
+        width: $defolt--width-100-persent;
+        padding: 0 0 $defolt--width-40-px 0;
+        h1 {
+            font-size: $xl-text;
+        }
+        div {
+            font-size: $big-text;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 10px; // Adjust the space between buttons as needed
+            h3 {
+                margin-bottom: 10px;
+            }
+            font-size: $small-text;
+            .button-solid {
+              background-color: #FBC100; // Yellow background color
+              color: #000; // Text color for the solid button
+              border: none; // No border for the solid button
+              padding: 10px 25px; // Vertical and horizontal padding
+              border-radius: 30px; // Adjust for rounded corners
+              font-weight: bold; // Bold text
+              font-size: 13px; // Adjust the font size as needed
+              text-transform: uppercase; // Uppercase text
+              cursor: pointer; // Pointer cursor on hover
+              outline: none; // No outline for accessibility
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Optional: add a shadow for depth
+          
+              &:hover {
+                background-color: darken(#FBC100, 10%); // Darken the button color on hover
+              }
+            }
+          
+            .button-outline {
+              background-color: transparent; // Transparent background for the outline button
+              color: #5a5959; // Text color for the outline button
+              border: 1px solid #bbb9b9; // Border for the outline button
+              padding: 8px 18px; // Adjust padding to account for the border
+              border-radius: 30px; // Adjust for rounded corners
+              font-weight: bold; // Bold text
+              font-size: 13px; // Adjust the font size as needed
+              text-transform: uppercase; // Uppercase text
+              cursor: pointer; // Pointer cursor on hover
+              outline: none; // No outline for accessibility
+              margin-left: 5px;
+          
+              &:hover {
+                background-color: rgba(0, 0, 0, 0.1); // Slight background on hover for the outline button
+              }
+            }
+          }
+          
+        @include align-c-justify-b;
+        div {
+            @include align-c-justify-b;
+        }
+        i {
+            margin-left: $defolt--width-10-px;
+        }
+    }
+    .product-head-description {
+        width: $defolt--width-100-persent;
+        overflow: hidden;
+        display: flex;
+        
+        .product__card {
+            margin-left: $defolt--width-10-px;
+            position: relative;
+            width: $card-width;
+            border: $card-border solid $card-border-color ;
+            border-radius: $card-border-radius ;
+            padding: $defolt--width-15-px;
+
+            img {
+                width: $defolt--width-100-persent;
+            }
+
+            .product__rate {
+                position: absolute;
+                right: 10px;
+
+                div {
+                    font-size: $big-text;
+                    border: $defolt-border-1;
+                    width: $defolt--width-40-px;
+                    height: $defolt--width-40-px;
+                    border-radius: $full-border-radius;
+                    @include flex-center;
+                    margin-bottom: $defolt--height-3-px;
+
+                    .fa-heart {
+                        font-weight: 500 !important;
+
+                    }
+                }
+            }
+
+            .product__discribtion-description {
+                width: $defolt--width-100-persent;
+
+                .product__title {
+                    font-size: $medium-text;
+                    color: $discribtion-text-color-2;
+                }
+
+                .product__stars {
+                    margin: $defolt--width-10-px 0;
+                    font-size: $medium-text;
+                    color: $discribtion-text-color-2;
+                }
+
+                .product__rasrochka {
+                    width: $defolt--width-max-content;
+                    padding: $defolt--width-5-px;
+                    font-size: $medium-text;
+                    background: $bg-3-color;
+                    color: $defolt-text-color;
+                    border-radius: $defolt--width-10-px;
+                    margin-bottom: $defolt--width-20-px ;
+
+                }
+
+                .product__price {
+                    width: $defolt--width-100-persent;
+                    @include align-c-justify-b;
+
+                    div {
+                        @include flex;
+
+                        p {
+                            margin-right: $defolt--width-5-px;
+                        }
+                    }
+
+                    .product__shopping {
+                        width: $defolt--width-max-content;
+                        padding: $defolt--width-10-px;
+                        border: $defolt--width-1-px solid $bg-4-color;
+                        border-radius: $defolt--width-10-px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
