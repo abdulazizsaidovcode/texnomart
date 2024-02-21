@@ -4,8 +4,8 @@
   @include flex;
   @include justify-b;
   background-color: $bg-5-color;
-  padding: $globe-padding-y $globe-padding-x;
-
+  padding: $globe-padding-y 10px 0 0;
+  width: 100%;
   .image-gallery {
     @include align-c;
     @include flex-r;

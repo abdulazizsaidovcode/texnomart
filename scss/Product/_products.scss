@@ -1,7 +1,7 @@
 $card-section-head: 600px;
 
 .product-description {
-    width: 100vw;
+    width: 100%;
     height: $card-section-head;
     padding: $defolt--height-10-px $defolt--width-20-px;
     @include justify-c;

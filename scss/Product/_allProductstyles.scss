@@ -2,3 +2,11 @@
 @import "fulldescription";
 @import "abzorproduct";
 @import "products" ;
+@import "productsitebar";
+
+
+.product-head  {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
