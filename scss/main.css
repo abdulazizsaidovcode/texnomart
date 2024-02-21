@@ -1471,10 +1471,13 @@ h3 {
   background-color: red;
   padding: 10px;
 }
-.product-navbar .product-prise {
-  border: 1px solid rgb(71, 68, 68);
+.product-navbar > div {
   border-radius: 15px;
   padding: 20px;
+  margin-bottom: 10px;
+}
+.product-navbar .product-prise {
+  border: 1px solid rgb(71, 68, 68);
 }
 .product-navbar .product-prise h1 {
   margin-bottom: 10px;
@@ -1496,6 +1499,30 @@ h3 {
 }
 .product-navbar .product-prise div .add-basket {
   background-color: #fbc100;
+}
+.product-navbar .rasrochka {
+  border: 1px solid rgb(71, 68, 68);
+}
+.product-navbar .rasrochka .rasrochka-btn-list {
+  display: flex;
+  justify-content: space-between;
+}
+.product-navbar .rasrochka .rasrochka-btn-list button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  margin: 5px;
+  height: 40px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #fbc100;
+  background-color: transparent;
+}
+.product-navbar .rasrochka .get-rasrochka {
+  border: 1px solid #fbc100;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .product-head {
