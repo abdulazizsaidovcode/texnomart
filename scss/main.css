@@ -1467,8 +1467,7 @@ h3 {
 }
 
 .product-navbar {
-  width: 400px;
-  background-color: red;
+  width: 450px;
   padding: 10px;
 }
 .product-navbar > div {
@@ -1504,6 +1503,7 @@ h3 {
   border: 1px solid rgb(71, 68, 68);
 }
 .product-navbar .rasrochka .rasrochka-btn-list {
+  margin: 15px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -1520,9 +1520,53 @@ h3 {
   background-color: transparent;
 }
 .product-navbar .rasrochka .get-rasrochka {
+  margin: 15px 0;
   border: 1px solid #fbc100;
   border-radius: 10px;
   padding: 10px;
+}
+.product-navbar .rasrochka .get-rasrochka > h1 {
+  font-size: 14px;
+  color: gray;
+}
+.product-navbar .rasrochka .get-rasrochka div {
+  margin: 0px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.product-navbar .rasrochka .get-rasrochka div img {
+  width: 70px;
+}
+.product-navbar .rasrochka .get-rasrochka div h1 {
+  font-size: 16px;
+}
+.product-navbar .rasrochka .get-rasrochka button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #333333;
+  color: white;
+}
+.product-navbar .garanty {
+  border-radius: 20px;
+  background-color: rgb(234, 234, 234);
+}
+.product-navbar .garanty .garanty-demand {
+  display: flex;
+  align-items: center;
+}
+.product-navbar .garanty .garanty-demand i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.product-navbar .garanty .garanty-demand p {
+  font-size: 14px;
 }
 
 .product-head {

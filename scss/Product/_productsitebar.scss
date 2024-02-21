@@ -1,9 +1,8 @@
 .product-navbar {
-    width: 400px;
-    background-color: red;
+    width: 450px;
     padding: 10px;
 
-    > div {
+    >div {
         border-radius: 15px;
         padding: 20px;
         margin-bottom: 10px;
@@ -43,6 +42,7 @@
         border: 1px solid rgb(71, 68, 68);
 
         .rasrochka-btn-list {
+            margin: 15px 0;
             display: flex;
             justify-content: space-between;
 
@@ -62,9 +62,61 @@
         }
 
         .get-rasrochka {
+            margin: 15px 0;
             border: 1px solid $bg-4-color;
             border-radius: 10px;
             padding: 10px;
+
+            >h1 {
+                font-size: $medium-text;
+                color: gray;
+            }
+
+            div {
+                margin: 0px 0;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 70px;
+                }
+
+                h1 {
+                    font-size: $big-text;
+                }
+            }
+
+            button {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 50px;
+                padding: 15px 25px;
+                border-radius: 10px;
+                border: none;
+                background-color: #333333;
+                color: white;
+            }
+        }
+    }
+
+    .garanty {
+        border-radius: 20px;
+        background-color: rgb(234, 234, 234);
+
+        .garanty-demand {
+            display: flex;
+            align-items: center;
+
+            i {
+                margin-right: 10px;
+                font-size: 20px;
+            }
+            p {
+            font-size: $medium-text;
+            }
         }
     }
 }
