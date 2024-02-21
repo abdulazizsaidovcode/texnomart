@@ -37,7 +37,7 @@
 
   .product-info {
     @include flex-c;
-
+    padding: 0 30px 0 0;
     h1.title {
       font-size: $big-text;
       margin-bottom: $defolt--padding-20-px;

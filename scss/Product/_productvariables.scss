@@ -1,0 +1,234 @@
+//------------- typographys-------------
+
+$very-small-text: 12px;
+$small-text: 13px;
+$medium-text: 14px;
+$big-text: 16px;
+$very-big-text: 20px;
+$xl-text: 25px;
+$xxl-text: 40px;
+
+//------------- globe padding -------------
+$globe-padding-x: 30px;
+$globe-padding-y: 15px;
+
+//------------- font colors-------------
+
+$defolt-text-color: #000000;
+$defolt-text-color-2: #fff;
+$discribtion-text-color: #bdbdbd;
+$discribtion-text-color-2: #75757c;
+$hover-text-color: #fbc100;
+
+//------------- background colors-------------
+
+$bg-1-color: #f5f5f5;
+$bg-2-color: #333333;
+$bg-3-color: #f4f4f4;
+$bg-4-color: #fbc100;
+$bg-5-color: #fff;
+$bg-6-color: #f9f9f9;
+
+// ---------btn-color----------------
+
+$btn-color-1:#fbc100;
+$btn-color-1:#fb0000;
+
+
+
+
+//------------- container and card styles ------------------
+
+$defolt-card-p: 16px;
+$defolt-card-mx: 10px;
+$defolt-card-mb: 10px;
+
+//------------- border styles ------------------
+
+$defolt-border-1: 1px solid #bdbdbd;  
+$defolt-border-2: 1px solid #fbc100;
+
+$defolt-border-radius: 10px;
+$border-radius-2: 15px;
+$full-border-radius: 50%;
+//------------- card styles ------------------
+
+$card-width: 275px;
+$card-border-radius: 16px;
+$card-border: 1px;
+$card-border-color: #bdbdbd;
+
+//------------------- width and height -------------------
+$defolt--width-max-content: max-content;
+$defolt--height-max-content: max-content;
+
+// %
+$defolt--width-10-persent:10%;
+$defolt--width-20-persent:20%;
+$defolt--width-30-persent:30%;
+$defolt--width-40-persent:40%;
+$defolt--width-50-persent:50%;
+$defolt--width-60-persent:60%;
+$defolt--width-70-persent:70%;
+$defolt--width-80-persent:80%;
+$defolt--width-90-persent:90%;
+$defolt--width-100-persent:100%;
+$defolt--width-100-vw:100vw;
+
+// px
+$defolt--width-1-px:1px;
+$defolt--width-2-px:2px;
+$defolt--width-3-px:3px;
+$defolt--width-4-px:4px;
+$defolt--width-5-px:5px;
+$defolt--width-6-px:6px;
+$defolt--width-7-px:7px;
+$defolt--width-8-px:8px;
+$defolt--width-9-px:9px;
+$defolt--width-10-px:10px;
+
+$defolt--width-10-px:10px;
+$defolt--width-15-px:15px;
+$defolt--width-20-px:20px;
+$defolt--width-30-px:30px;
+$defolt--width-40-px:40px;
+$defolt--width-50-px:50px;
+$defolt--width-60-px:60px;
+$defolt--width-70-px:70px;
+$defolt--width-80-px:80px;
+$defolt--width-90-px:90px;
+$defolt--width-100-px:100px;
+$defolt--width-200-px:200px;
+$defolt--width-300-px:300px;
+$defolt--width-400-px:400px;
+$defolt--width-500-px:500px;
+$defolt--width-600-px:600px;
+
+// %
+$defolt--height-10-persent:10%;
+$defolt--height-20-persent:20%;
+$defolt--height-30-persent:30%;
+$defolt--height-40-persent:40%;
+$defolt--height-50-persent:50%;
+$defolt--height-60-persent:60%;
+$defolt--height-70-persent:70%;
+$defolt--height-80-persent:80%;
+$defolt--height-90-persent:90%;
+$defolt--height-100-persent:100%;
+$defolt--height-100-vh:100vh;
+// px
+$defolt--height-1-px:1px;
+$defolt--height-2-px:2px;
+$defolt--height-3-px:3px;
+$defolt--height-4-px:4px;
+$defolt--height-5-px:5px;
+$defolt--height-6-px:6px;
+$defolt--height-7-px:7px;
+$defolt--height-8-px:8px;
+$defolt--height-9-px:9px;
+$defolt--height-10-px:10px;
+
+$defolt--height-10-px:10px;
+$defolt--height-20-px:20px;
+$defolt--height-30-px:30px;
+$defolt--height-40-px:40px;
+$defolt--height-50-px:50px;
+$defolt--height-60-px:60px;
+$defolt--height-70-px:70px;
+$defolt--height-80-px:80px;
+$defolt--height-90-px:90px;
+$defolt--height-100-px:100px;
+$defolt--height-200-px:200px;
+$defolt--height-300-px:300px;
+$defolt--height-400-px:400px;
+$defolt--height-500-px:500px;
+$defolt--height-600-px:600px;
+
+
+//------------------- paddings---------------------
+
+// px
+$defolt--padding-1-px:1px;
+$defolt--padding-2-px:2px;
+$defolt--padding-3-px:3px;
+$defolt--padding-4-px:4px;
+$defolt--padding-5-px:5px;
+$defolt--padding-6-px:6px;
+$defolt--padding-7-px:7px;
+$defolt--padding-8-px:8px;
+$defolt--padding-9-px:9px;
+$defolt--padding-10-px:10px;
+
+$defolt--padding-10-px:10px;
+$defolt--padding-15-px:15px;
+$defolt--padding-20-px:20px;
+$defolt--padding-30-px:30px;
+$defolt--padding-40-px:40px;
+$defolt--padding-50-px:50px;
+$defolt--padding-60-px:60px;
+$defolt--padding-70-px:70px;
+$defolt--padding-80-px:80px;
+$defolt--padding-90-px:90px;
+$defolt--padding-100-px:100px;
+
+
+
+// ------------- mixens --------------
+
+
+@mixin flex {
+    display: flex; 
+  }
+@mixin flex-c {
+    flex-direction: column; 
+  }
+@mixin flex-r {
+    flex-direction: row; 
+  }
+@mixin flex-c-r {
+    flex-direction: column-reverse; 
+  }
+@mixin flex-r-r {
+    flex-direction: row-reverse; 
+  }
+@mixin flex-w {
+    flex-wrap: wrap;
+  }
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@mixin align-c {
+    display: flex;
+    align-items: center;
+  }
+@mixin justify-c {
+    display: flex;
+    justify-content: center;
+  }
+@mixin justify-b {
+    display: flex;
+    justify-content: space-between;
+  }
+@mixin justify-a {
+    display: flex;
+    justify-content: space-around;
+  }
+@mixin align-c-justify-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+@mixin align-c-justify-a {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+
+
+
+

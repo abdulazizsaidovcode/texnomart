@@ -1206,6 +1206,7 @@ h3 {
 }
 .product-display .product-info {
   flex-direction: column;
+  padding: 0 30px 0 0;
 }
 .product-display .product-info h1.title {
   font-size: 16px;
@@ -1466,8 +1467,35 @@ h3 {
 }
 
 .product-navbar {
-  width: 300px;
+  width: 400px;
   background-color: red;
+  padding: 10px;
+}
+.product-navbar .product-prise {
+  border: 1px solid rgb(71, 68, 68);
+  border-radius: 15px;
+  padding: 20px;
+}
+.product-navbar .product-prise h1 {
+  margin-bottom: 10px;
+}
+.product-navbar .product-prise div {
+  display: flex;
+  justify-content: space-between;
+}
+.product-navbar .product-prise div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  margin: 5px;
+  height: 50px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+}
+.product-navbar .product-prise div .add-basket {
+  background-color: #fbc100;
 }
 
 .product-head {
