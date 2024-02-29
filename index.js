@@ -103,44 +103,99 @@
 // })
 
 
+
+
+// let id = 0
+
+ // `+ "<div onclick='addTowishes(" + (item.id, item.wishes) + ")><i class="+ (heart) +"></i></div>" + `
+
+
 function getProduct() {
-    let head = document.getElementsByClassName("product-head")
+    let cals = "product__shopping cart-btn "
+    let icon = "fa-solid fa-cart-shopping"
+    let heart = 'fa-solid fa-heart'
+    let head = document.getElementsByClassName("product-head");
     fetch('http://localhost:3000/product')
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            data.map(item => {
-                head[0].innerHTML = `
+            let content = '';
+            data.splice(0, 5).map(item => {
+                content += `
             <div class="product__card">
                 <div class="product__rate">
-                    <div><i class="fa-solid fa-heart"></i></div>
                     <div><i class="fa-solid fa-scale-unbalanced-flip"></i></div>
                 </div>
                 <div><img
-                        src="${item.url}"
+                        src="http://localhost:3000/${item.url}"
                         alt=""></div>
                 <div class="product__discribtion">
-                    <p class="product__title">Стиральная машина Hisense WFQP9014EVM </p>
+                    <p class="product__title">${item.describtion} </p>
                     <div class="product__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                             class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                             class="fa-solid fa-star"></i></div>
                     <div class="product__rasrochka">
-                        <p>от 68 982 сум / 24 мес.</p>
+                        <p>от ${item.monthpay} сум / 24 мес.</p>
                     </div>
                     <div class="product__price">
                         <div>
-                            <p>989 000 </p><span>сум</span>
+                            <p>${item.price} </p><span>сум</span>
                         </div>
-                        <div class="product__shopping"><i class="fa-solid fa-cart-shopping"></i></div>
+                         `+  "<div onclick='addToCart(" + (item.id, item.cart) + ")' class=" + (cals) + "><i class=" + (icon) + "></i></div> " + `
                     </div>
                 </div>
             </div>
             `;
             });
-
+            head[0].innerHTML = content;
         }).catch(error => {
             console.error('Xato:', error);
-        })
+        });
+
 }
 
-getProduct()
+function addToCart(id , cart) {
+
+    const data = {
+        cart: !cart,
+    };
+
+    fetch(`http://localhost:3000/product/${id}`, {
+        method: 'PATCH', 
+        headers: {
+            'Content-Type': 'application/json', 
+        },
+        body: JSON.stringify(data) 
+    })
+    .then((response) => response.json()) 
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.error('Xato:', error); 
+    });
+}
+function addTowishes(id ,wishes) {
+
+    const data = {
+        wishes: !wishes,
+    };
+
+    fetch(`http://localhost:3000/product/${id}`, {
+        method: 'PATCH', 
+        headers: {
+            'Content-Type': 'application/json', 
+        },
+        body: JSON.stringify(data) 
+    })
+    .then((response) => response.json()) 
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.error('Xato:', error); 
+    });
+}
+
+
+getProduct();
