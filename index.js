@@ -103,3 +103,44 @@
 // })
 
 
+function getProduct() {
+    let head = document.getElementsByClassName("product-head")
+    fetch('http://localhost:3000/product')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            data.map(item => {
+                head[0].innerHTML = `
+            <div class="product__card">
+                <div class="product__rate">
+                    <div><i class="fa-solid fa-heart"></i></div>
+                    <div><i class="fa-solid fa-scale-unbalanced-flip"></i></div>
+                </div>
+                <div><img
+                        src="${item.url}"
+                        alt=""></div>
+                <div class="product__discribtion">
+                    <p class="product__title">Стиральная машина Hisense WFQP9014EVM </p>
+                    <div class="product__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i></div>
+                    <div class="product__rasrochka">
+                        <p>от 68 982 сум / 24 мес.</p>
+                    </div>
+                    <div class="product__price">
+                        <div>
+                            <p>989 000 </p><span>сум</span>
+                        </div>
+                        <div class="product__shopping"><i class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                </div>
+            </div>
+            `;
+            });
+
+        }).catch(error => {
+            console.error('Xato:', error);
+        })
+}
+
+getProduct()
